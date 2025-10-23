@@ -75,7 +75,7 @@ const DevelopersHero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+            {/* <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Link href={'/developers/api-keys'} className="group bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-blue-800 transition-all flex items-center space-x-2 shadow-lg hover:shadow-xl">
                 <span>Start Building Now</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -83,7 +83,7 @@ const DevelopersHero = () => {
               <Link href={'/docs'} className="group text-slate-700 px-8 py-4 rounded-xl font-semibold text-lg hover:text-slate-900 hover:bg-slate-100 transition-all flex items-center space-x-2">
                 <span>Read the Docs</span>
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column - Developer Tools Showcase */}

@@ -126,7 +126,7 @@ const Developers = () => {
               </pre>
             </section>
 
-            <section className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-12 text-center">
+            <section className="bg-gradient-to-t from-black to-slate-900 rounded-2xl p-12 text-center">
               <h3 className="text-3xl font-bold text-white mb-8">Trusted by Developers Worldwide</h3>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[ 
@@ -391,7 +391,7 @@ const Developers = () => {
           </nav>
           {renderTabContent()}
           {/* Support */}
-          <section className="bg-gradient-to-r from-blue-900 to-blue-800 rounded-3xl p-12 text-center mt-20">
+          <section className="bg-gradient-to-t from-blue-600 to-blue-800 rounded-3xl p-12 text-center mt-20">
             <h3 className="text-3xl font-bold text-white mb-4">Need Help Getting Started?</h3>
             <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto">
               Our developer support team is here to help you integrate CrossborderPe APIs successfully.
@@ -410,10 +410,10 @@ const Developers = () => {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6">
-              <button className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-50 transition-all shadow-xl">
+              <button className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-md hover:bg-blue-50 transition-all shadow-xl">
                 Get API Keys
               </button>
-              <button className="border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white hover:text-slate-900 transition-all flex items-center space-x-3">
+              <button className="border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-md hover:bg-white hover:text-slate-900 transition-all flex items-center space-x-3">
                 <MessageCircle className="w-6 h-6" />
                 <span>Contact Support</span>
               </button>
