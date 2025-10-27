@@ -10,6 +10,7 @@ import {
   ArrowUpDown,
 } from 'lucide-react';
 import axios from 'axios';
+import Link from 'next/link';
 
 const FXCalculator = () => {
   const [fromCurrency, setFromCurrency] = useState('USD');
@@ -105,18 +106,6 @@ const currencies = [
     }
   };
 
-  const initiateTransfer = async (e) => {
-    e.preventDefault();
-    if (!convertedAmount || ourRate === null) {
-      alert('Please calculate the amount first.');
-      return;
-    }
-    
-    // Here, you would integrate with your payment system (e.g., XFlow)
-    // by redirecting to a checkout page or calling another API.
-    console.log('Initiating transfer with:', { fromCurrency, toCurrency, amount, convertedAmount });
-    alert('Transfer request submitted for processing!');
-  };
 
   const formatCurrency = (value, currency) => {
     return new Intl.NumberFormat('en-IN', {
@@ -268,19 +257,19 @@ const currencies = [
               )}
             </div>
             
-            <form onSubmit={initiateTransfer} className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-4 text-white text-center">
+            <div  className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-4 text-white text-center">
               <h4 className="text-xl font-bold mb-4">Start Saving Today</h4>
               <p className="text-blue-100 mb-6 text-sm">
                 Join thousands who save money on international transfers.
               </p>
-              <button 
-                type="submit" 
-                className="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={loading || convertedAmount === null}
+              <Link href={'https://cbp-main-dash.vercel.app'} 
+                target='_blank'
+                className="px-4 w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+      
               >
-                Send Money Now
-              </button>
-            </form>
+                Create Account Now
+              </Link>
+            </div>
           </div>
         </div>
       </div>
