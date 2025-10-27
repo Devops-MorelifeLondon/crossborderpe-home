@@ -16,19 +16,19 @@ const Hero = () => {
                 Trusted Partner 
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/J_P_Morgan_Chase_Logo_2008_1.svg/2560px-J_P_Morgan_Chase_Logo_2008_1.svg.png" 
-                  className='w-24 sm:w-32 object-contain' 
+                  className='w-40 sm:w-60 object-contain' 
                   alt="JP Morgan Chase Logo" 
                 />
               </div>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
               Global Multi-currency <span className="text-blue-600">Account</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-light">
               Receive international payments instantly with enterprise-grade infrastructure. 
               Secure, compliant, and cost-effective solutions trusted by global businesses.
             </p>

@@ -47,7 +47,7 @@ const Home = () => (
         <FxCalculator />
       </Suspense>
       
-        {/* <WorldClock /> */}
+        <WorldClock />
      
      
       <Suspense fallback={<div>Loading testimonials...</div>}>

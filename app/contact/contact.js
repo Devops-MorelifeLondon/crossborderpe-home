@@ -43,15 +43,6 @@ const contactMethods = [
         href: "#" // Replace with your live chat link
     },
     {
-        icon: Phone,
-        title: "Phone Support",
-        description: "Speak directly with our payment specialists.",
-        contact: "+1 (800) 123-4567",
-        availability: "24/7 Multi-language support",
-        action: "Call Now",
-        href: "tel:+18001234567"
-    },
-    {
         icon: Mail,
         title: "Email Support",
         description: "Send us your detailed inquiries for a swift response.",
@@ -183,6 +174,15 @@ const ContactPage = () => {
                                                 </div>
                                             </div>
                                             <div>
+                                                <label htmlFor="full-name" className="block text-sm font-medium text-slate-700">Number</label>
+                                                <div className="mt-1.5 relative rounded-md shadow-sm">
+                                                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                                        <User className="h-5 w-5 text-slate-400" aria-hidden="true" />
+                                                    </div>
+                                                    <input type="number" name="full-name" id="full-name" required className="block w-full rounded-lg border-slate-300 pl-10 py-2.5 text-slate-800 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm" placeholder="+91 0000000000"/>
+                                                </div>
+                                            </div>
+                                            <div>
                                                 <label htmlFor="email" className="block text-sm font-medium text-slate-700">Work Email</label>
                                                 <div className="mt-1.5 relative rounded-md shadow-sm">
                                                     <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -212,13 +212,13 @@ const ContactPage = () => {
                 </section>
                 
                 {/* ===== Contact Methods Section ===== */}
-                <section className="py-20">
+                <section >
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                          <div className="text-center max-w-2xl mx-auto mb-16">
                             <h2 className="text-3xl font-bold text-slate-900 tracking-tight sm:text-4xl">Other Ways to Connect</h2>
                             <p className="mt-4 text-lg text-slate-600">We're available through multiple channels. Choose the one that works best for you.</p>
                         </div>
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {contactMethods.map((method, index) => (
                                 <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-slate-100 text-center hover:shadow-xl transition-all flex flex-col">
                                     <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg p-4 w-fit mx-auto mb-6">
@@ -240,7 +240,7 @@ const ContactPage = () => {
                 </section>
 
                 {/* ===== Why Choose Us & Global Presence Section ===== */}
-                <section className="py-20">
+                <section className="py-12">
                      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                         {/* --- Stats and Security --- */}
                         <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-200">
@@ -286,7 +286,7 @@ const ContactPage = () => {
                 </section>
                 
                 {/* ===== CTA Section ===== */}
-                <section className="pb-20">
+                <section className="pb-10">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center">
                             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-12 text-white shadow-2xl">

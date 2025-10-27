@@ -60,7 +60,7 @@ const ResourcesHero = () => {
               Intelligence Center for
               <br />
               
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Cross-Border Payments</span>
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Resources</span>
             </h1>
 
             {/* Subheadline */}
