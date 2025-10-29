@@ -132,7 +132,7 @@ const timezones = useMemo(() => {
             <div className="space-y-3">
               <a href="mailto:support@crossborderpe.com" className="flex items-center space-x-3 group">
                 <Mail className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors" />
-                <span className="text-gray-600 group-hover:text-blue-600 transition-colors">support@crossborderpe.com</span>
+                <span className="text-gray-600 group-hover:text-blue-600 transition-colors">info@crossborderpe.com</span>
               </a>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-gray-400" />
