@@ -63,10 +63,11 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="group w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:from-blue-700 hover:to-blue-800 transition-all flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
+              <Link href="https://cbp-main-dash.vercel.app/dashboard"
+              target="_blank"className="group w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:from-blue-700 hover:to-blue-800 transition-all flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
                 <span>Open Account</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
               <Link href={'https://www.youtube.com/@CrossborderPe'} target='_blank' className="group w-full sm:w-auto border-2 border-slate-300 text-slate-700 px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:border-blue-600 hover:text-blue-600 transition-all flex items-center justify-center space-x-2">
                 <Play className="w-5 h-5" />
                 <span>Watch Video</span>
