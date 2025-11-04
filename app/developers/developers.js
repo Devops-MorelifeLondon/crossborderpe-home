@@ -409,15 +409,7 @@ const Developers = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6">
-              <button className="bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-md hover:bg-blue-50 transition-all shadow-xl">
-                Get API Keys
-              </button>
-              <button className="border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-md hover:bg-white hover:text-slate-900 transition-all flex items-center space-x-3">
-                <MessageCircle className="w-6 h-6" />
-                <span>Contact Support</span>
-              </button>
-            </div>
+          
           </section>
         </div>
       </div>

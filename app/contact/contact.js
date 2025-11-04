@@ -344,7 +344,7 @@ const ContactPage = () => {
                                                         <Phone className="h-5 w-5 text-slate-400" aria-hidden="true" />
                                                     </div>
                                                     <input 
-                                                        type="tel" 
+                                                        type="tel " 
                                                         name="contactNumber" 
                                                         id="contactNumber" 
                                                         value={formData.contactNumber}

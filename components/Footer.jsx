@@ -157,28 +157,7 @@ const timezones = useMemo(() => {
             </div>
           ))}
 
-          {/* Newsletter Signup */}
-          <div className="lg:col-span-5 border-t border-gray-800 pt-8 mt-8 lg:mt-0 lg:border-none lg:pt-0">
-             <div className="max-w-md">
-                <h3 className="text-lg font-semibold mb-4">Stay Updated</h3>
-                <p className="text-gray-600 mb-4">
-                  Get the latest updates on new features and industry insights.
-                </p>
-                <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
-                    className="flex-1 px-4 py-2 bg-[#f2f2f2] border border-white/70 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
-                  />
-                  <button type="submit" className="px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-md font-medium hover:from-blue-700 hover:to-blue-800 transition-all flex items-center justify-center gap-2 shadow-md">
-                    <span>Subscribe</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
-                </form>
-             </div>
-          </div>
+       
         </div>
 
         {/* Middle Section: Global Presence */}
