@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 import CrossBorderPELogo from './Logo';
 
 const navLinks = [
+  { label: 'Home', href: '/' },
   { label: 'Solutions', href: '/solutions' },
   { label: 'Developers', href: '/developers' },
   { label: 'Resources', href: '/resources' },

@@ -2,8 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import NextTopLoader from 'nextjs-toploader';
-
+import NextTopLoader from "nextjs-toploader";
+import ReCaptchaProviderWrapper from "@/components/ReCaptchaProviderWrapper"; // ✅ import wrapper
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,13 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-      <NextTopLoader height={3} color="blue" />
-        <NavBar/>
-        {children}
-        <Footer/>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ReCaptchaProviderWrapper>
+          <NextTopLoader height={3} color="blue" />
+          <NavBar />
+          {children}
+          <Footer />
+        </ReCaptchaProviderWrapper>
       </body>
     </html>
   );
