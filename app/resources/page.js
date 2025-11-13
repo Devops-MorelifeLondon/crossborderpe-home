@@ -23,7 +23,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/images/crossborderpei-og-image.jpg`,
+        url: `${baseUrl}/Crossborderpe_colored.png`,
         width: 1200,
         height: 630,
         alt: "Cross-Border Payment Intelligence Center | CrossborderPe",
@@ -35,7 +35,7 @@ export const metadata = {
     title: "Cross-Border Payment Intelligence Center",
     description:
       "Access cutting-edge research on global payments, compliance, and treasury management.",
-    images: [`${baseUrl}/images/crossborderpei-og-image.jpg`],
+    images: [`${baseUrl}/Crossborderpe_colored.png`],
   },
 };
 

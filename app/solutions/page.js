@@ -13,11 +13,11 @@ export const metadata = {
     title: "Best Cross-Border Payment Solutions for Global Businesses & Individuals",
     description:
       "Send, receive, and manage payments worldwide with top security, low fees, and real-time support. Perfect for startups, freelancers, exporters, and companies.",
-    url: baseUrl,
+    url:  `${baseUrl}/solutions`,
     type: "website",
     images: [
       {
-        url: `${baseUrl}/og-image.jpg`,
+        url: `${baseUrl}/Crossborderpe_colored.png`,
         width: 1200,
         height: 630,
         alt: "CrossborderPe – Cross-Border Payment Solutions",

@@ -1,7 +1,32 @@
-'use client';
+
 
 import React from 'react';
 import { ShieldCheck, FileText, Lock, CheckCircle, Globe, ScrollText } from 'lucide-react';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
+export const metadata = {
+  title: "Legal, Privacy & Compliance | CrossborderPe",
+  description:
+    "Review CrossborderPe’s Terms of Use, Privacy Policy, Security Measures, and Compliance Standards. Learn how we protect your data, secure transactions, and operate under strict financial regulations.",
+
+  openGraph: {
+    title: "CrossborderPe – Legal, Privacy & Compliance",
+    description:
+      "Read detailed information about CrossborderPe’s Terms of Use, Privacy Policy, Security protocols, and Compliance with global financial regulations.",
+    url: `${baseUrl}/legal`,
+    type: "article",
+    images: [
+      {
+        url: `${baseUrl}/Crossborderpe_colored.png`,
+        width: 1200,
+        height: 630,
+        alt: "CrossborderPe Legal & Compliance",
+      },
+    ],
+  },
+};
+
+
 
 const LegalPage = () => {
   return (

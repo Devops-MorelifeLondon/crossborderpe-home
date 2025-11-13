@@ -17,7 +17,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/og-image.jpg`,
+        url: `${baseUrl}/Crossborderpe_colored.png`,
         width: 1200,
         height: 630,
         alt: "CrossborderPe Developer API Docs & SDKs",

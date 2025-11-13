@@ -491,14 +491,11 @@ const SolutionsPage = ()=> {
                         </div>
 
                         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                          <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-blue-800 transition-all flex items-center justify-center space-x-2 shadow-lg" type="button">
+                          <Link href="https://app.crossborderpe.com" target='_blank' className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-blue-800 transition-all flex items-center justify-center space-x-2 shadow-lg" type="button">
                             <span>{sol.cta}</span>
                             <ArrowRight className="w-5 h-5" />
-                          </button>
-                          <button className="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold text-lg hover:border-blue-600 hover:text-blue-600 transition-all flex items-center justify-center space-x-2" type="button">
-                            <PhoneCall className="w-5 h-5" />
-                            <span>Talk to Expert</span>
-                          </button>
+                          </Link>
+                         
                         </div>
                       </div>
 
@@ -550,13 +547,10 @@ const SolutionsPage = ()=> {
               Open your account in minutes and start saving today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6">
-              <button className="bg-white text-blue-600 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-50 transition-all shadow-xl" type="button">
+              <Link href="https://app.crossborderpe.com" target='_blank' className="bg-white text-blue-600 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-blue-50 transition-all shadow-xl" type="button">
                 Open Free Account
-              </button>
-              <button className="border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white hover:text-blue-600 transition-all flex items-center space-x-3" type="button">
-                <Headphones className="w-6 h-6" />
-                <span>Talk to Expert</span>
-              </button>
+              </Link>
+             
             </div>
             <div className="flex items-center justify-center space-x-8 mt-12 text-blue-100">
               <div className="flex items-center space-x-2">

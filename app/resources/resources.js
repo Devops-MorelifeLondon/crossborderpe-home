@@ -969,44 +969,7 @@ const Resources = () => {
         {/* Tab Content */}
         {renderTabContent()}
 
-        {/* Newsletter Signup */}
-        <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-16 text-center mt-24">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-blue-500 rounded-full p-6 w-fit mx-auto mb-8 shadow-lg">
-              <Zap className="w-12 h-12 text-white" />
-            </div>
-            <h3 className="text-4xl font-bold text-white mb-6">Stay Ahead of Payment Innovation</h3>
-            <p className="text-2xl text-slate-300 mb-10 leading-relaxed">
-              Join 50,000+ finance professionals who rely on our expert research and insights 
-              to drive their cross-border payment strategies and global expansion initiatives.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 max-w-2xl mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your business email"
-                className="w-full px-8 py-5 rounded-2xl border-0 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
-              />
-              <button className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-xl flex items-center justify-center space-x-3">
-                <span>Subscribe</span>
-                <ArrowRight className="w-6 h-6" />
-              </button>
-            </div>
-            <div className="flex items-center justify-center space-x-8 mt-10 text-slate-400">
-              <div className="flex items-center space-x-2">
-                <Users className="w-5 h-5" />
-                <span>50,000+ subscribers</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Globe className="w-5 h-5" />
-                <span>Weekly insights</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Award className="w-5 h-5" />
-                <span>Industry recognition</span>
-              </div>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
     </>

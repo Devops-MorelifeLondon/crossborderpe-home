@@ -20,7 +20,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        url:  `${baseUrl}/Crossborderpe_colored.png`,
         width: 1200,
         height: 630,
         alt: "CrossborderPe Contact Page",
