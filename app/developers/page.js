@@ -7,12 +7,12 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
 export const metadata = {
   title: "Developer API Docs & SDKs | CrossborderPe",
   description:
-    "Integrate secure, global cross-border payments into your app. Explore CrossborderPe REST APIs, quickstart, SDKs, sandbox, and webhooks. Fast, robust, and trusted by developers.",
+    "Integrate secure global payments into your app with CrossborderPe REST APIs, SDKs, quickstart guides, sandbox tools, and webhooks. Fast, reliable, and developer-friendly.",
   robots: "index, follow",
   openGraph: {
     title: "API Docs, SDKs & Webhooks | CrossborderPe Developer Platform",
     description:
-      "Build on the world's most robust cross-border payment APIs. Full docs, SDKs, testing sandbox. Power global transfers securely.",
+      "Build with powerful cross-border payment APIs, SDKs, and sandbox testing. Secure, scalable, and built for global-ready applications.",
     url: `${baseUrl}/developer`,
     type: "website",
     images: [
@@ -28,6 +28,7 @@ export const metadata = {
     canonical: `${baseUrl}/developer`,
   },
 };
+
 
 
 const page = () => {

@@ -1,15 +1,14 @@
 import React from 'react'
 import Resources from './resources';
 
-
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
 
 export const metadata = {
   title: "Cross-Border Payment Intelligence Center | Research, Insights & Webinars",
   description:
-    "Access expert research, analysis, guides, webinars, and resources to optimize your international payment operations and global business growth. Trusted CrossborderPe knowledge hub.",
+    "Explore expert research, analysis, guides, and webinars to enhance your global payment operations and business growth. Your trusted CrossborderPe knowledge hub.",
   keywords:
-    "cross-border payments, payment intelligence, research, webinars, financial technology, compliance, API integration, treasury, fintech, global payments, enterprise payments",
+    "cross-border payments, payment intelligence, research, webinars, fintech insights, compliance, API integration, global treasury, enterprise payments",
   robots: "index, follow",
   alternates: {
     canonical: `${baseUrl}/resources`,
@@ -18,7 +17,7 @@ export const metadata = {
     title:
       "Cross-Border Payment Intelligence Center | Research, Insights & Webinars",
     description:
-      "Access expert research, analysis, guides, webinars, and resources to optimize your international payment operations and global business growth.",
+      "Expert research, guides, and webinars to help you optimize global payment operations and business growth.",
     url: `${baseUrl}/resources`,
     type: "website",
     images: [
@@ -32,19 +31,15 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cross-Border Payment Intelligence Center",
+    title: "Cross-Border Payment Intelligence Center | CrossborderPe",
     description:
-      "Access cutting-edge research on global payments, compliance, and treasury management.",
+      "Get expert insights on global payments, compliance, fintech, and treasury operations.",
     images: [`${baseUrl}/Crossborderpe_colored.png`],
   },
 };
 
-
-
 const page = () => {
-  return (
-    <Resources/>
-  )
+  return <Resources />;
 }
 
-export default page
+export default page;

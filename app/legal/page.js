@@ -4,15 +4,19 @@ import React from 'react';
 import { ShieldCheck, FileText, Lock, CheckCircle, Globe, ScrollText } from 'lucide-react';
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
+
 export const metadata = {
   title: "Legal, Privacy & Compliance | CrossborderPe",
   description:
-    "Review CrossborderPe’s Terms of Use, Privacy Policy, Security Measures, and Compliance Standards. Learn how we protect your data, secure transactions, and operate under strict financial regulations.",
-
+    "Review CrossborderPe’s Terms of Use, Privacy Policy, Security measures, and Compliance standards. Learn how we safeguard data and ensure secure global payment operations.",
+  robots: "noindex, nofollow",
+  alternates: {
+    canonical: `${baseUrl}/legal`,
+  },
   openGraph: {
     title: "CrossborderPe – Legal, Privacy & Compliance",
     description:
-      "Read detailed information about CrossborderPe’s Terms of Use, Privacy Policy, Security protocols, and Compliance with global financial regulations.",
+      "Explore CrossborderPe’s Terms of Use, Privacy Policy, Security practices, and Compliance framework designed to protect users and meet global regulatory standards.",
     url: `${baseUrl}/legal`,
     type: "article",
     images: [
@@ -25,6 +29,7 @@ export const metadata = {
     ],
   },
 };
+
 
 
 

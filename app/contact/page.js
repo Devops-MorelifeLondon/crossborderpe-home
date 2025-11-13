@@ -5,9 +5,9 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
 export const metadata = {
   title: "Contact Us | CrossborderPe - Global Cross-Border Payments",
   description:
-    "Contact CrossborderPe's payment specialists for global payment solutions. We provide expert support, 24/7 live chat, phone, and email help for multi-currency business needs.",
+    "Connect with CrossborderPe’s payment specialists for global, secure, and multi-currency business solutions. Get expert assistance via 24/7 live chat, phone, and email.",
   keywords:
-    "cross-border payments, global payments, payment support, contact, multi-currency, business payments, fintech, global money transfer",
+    "cross-border payments, global payments, payment support, contact, multi-currency, business payments, fintech support, global money transfer help",
   robots: "index, follow",
   alternates: {
     canonical: `${baseUrl}/contact`,
@@ -15,12 +15,12 @@ export const metadata = {
   openGraph: {
     title: "Contact Us | CrossborderPe - Global Cross-Border Payments",
     description:
-      "Connect with our payment specialists for instant, secure, and global multi-currency solutions. 24/7 live chat, phone, and email support available.",
+      "Reach our payment experts for secure and fast global payment assistance. Live chat, phone, and email support available 24/7.",
     url: `${baseUrl}/contact`,
     type: "website",
     images: [
       {
-        url:  `${baseUrl}/Crossborderpe_colored.png`,
+        url: `${baseUrl}/Crossborderpe_colored.png`,
         width: 1200,
         height: 630,
         alt: "CrossborderPe Contact Page",
@@ -31,12 +31,13 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contact Us | CrossborderPe",
     description:
-      "Contact CrossborderPe payment experts for secure, fast global solutions. Live chat, phone, and email.",
+      "Talk to CrossborderPe’s support team for fast, secure global payment solutions. Available via live chat, phone, and email.",
     images: [
-      "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      `${baseUrl}/Crossborderpe_colored.png`,
     ],
   },
 };
+
 
 
 const page = () => {
