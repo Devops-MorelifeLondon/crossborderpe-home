@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <meta name="msvalidate.01" content="5BC544E30D7A6B30B66C8D57F437BB43" />
         {/* ✅ Microsoft Clarity */}
         <Script id="ms-clarity" strategy="afterInteractive">
           {`
