@@ -50,7 +50,7 @@ export default function NavBar() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="https://cbp-main-dash.vercel.app/dashboard"
+             href={'https://app.crossborderpe.com'}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-black transition-colors font-medium"
@@ -58,7 +58,7 @@ export default function NavBar() {
               Sign In
             </Link>
             <Link
-              href="https://cbp-main-dash.vercel.app/dashboard"
+             href={'https://app.crossborderpe.com'}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2.5 rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg"
@@ -97,7 +97,7 @@ export default function NavBar() {
 
             <div className="pt-4 border-t border-gray-100 space-y-3">
               <Link
-                href="https://cbp-main-dash.vercel.app/dashboard"
+                href={'https://app.crossborderpe.com'}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
@@ -106,7 +106,7 @@ export default function NavBar() {
                 Sign In
               </Link>
               <Link
-                href="https://cbp-main-dash.vercel.app/dashboard"
+                href={'https://app.crossborderpe.com'}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}

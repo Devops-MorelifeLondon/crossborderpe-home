@@ -176,7 +176,7 @@ const WhyChooseUs = () => {
               Start saving time and money today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link href={'https://cbp-main-dash.vercel.app'} target='_blank' className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg flex items-center space-x-2">
+              <Link href={'https://app.crossborderpe.com'} target='_blank' className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all shadow-lg flex items-center space-x-2">
                 <span>Open Account Now</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>

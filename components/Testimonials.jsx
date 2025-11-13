@@ -188,7 +188,7 @@ const Testimonials = () => {
               Experience the future of cross-border payments.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link href={'https://cbp-main-dash.vercel.app'} target='_blank' className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition-all shadow-lg">
+              <Link href={'https://app.crossborderpe.com'} target='_blank' className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition-all shadow-lg">
                 Open Your Account
               </Link>
        

@@ -152,7 +152,7 @@ const currencies = [
               </div>
 
               <div className="mb-8">
-                <label className="block text-sm font-semibold text-slate-700 mb-3">You send</label>
+                <label className="block text-sm font-semibold text-slate-700 mb-3">You receive</label>
                 <input
                   type="number"
                   value={amount}
@@ -262,7 +262,7 @@ const currencies = [
               <p className="text-blue-100 mb-6 text-sm">
                 Join thousands who save money on international transfers.
               </p>
-              <Link href={'https://cbp-main-dash.vercel.app'} 
+              <Link href={'https://app.crossborderpe.com'} 
                 target='_blank'
                 className="px-4 w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       

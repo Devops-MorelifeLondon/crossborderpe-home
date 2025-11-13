@@ -32,15 +32,7 @@ const heroFeatures = [
 ];
 
 const contactMethods = [
-  {
-    icon: Headphones,
-    title: "Live Chat Support",
-    description: "Get instant help with your cross-border payments.",
-    contact: "Available 24/7",
-    availability: "Average response: 30 seconds",
-    action: "Start Chat",
-    href: "#",
-  },
+ 
   {
     icon: Mail,
     title: "Email Support",
@@ -387,7 +379,7 @@ const ContactPage = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <Link
-                    href="https://cbp-main-dash.vercel.app/"
+             href={'https://app.crossborderpe.com'}
                     className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all shadow-md hover:shadow-lg"
                   >
                     Open Account
