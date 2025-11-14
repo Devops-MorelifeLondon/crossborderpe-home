@@ -56,10 +56,18 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* ✅ Jotform Agent – loaded last, non-blocking */}
-        <Script
-          src="https://cdn.jotfor.ms/agent/embedjs/019a822b719976c0aca539928c8ec215fc10/embed.js"
-          strategy="lazyOnload"
-        />
+       {/* Jotform Script (Load after 5 seconds) */}
+<Script id="jotform-delayed" strategy="afterInteractive">
+  {`
+    setTimeout(function () {
+      var s = document.createElement("script");
+      s.src = "https://cdn.jotfor.ms/agent/embedjs/019a822b719976c0aca539928c8ec215fc10/embed.js";
+      s.async = true;
+      document.body.appendChild(s);
+    }, 4000);
+  `}
+</Script>
+
 
         <ReCaptchaProviderWrapper>
           <NextTopLoader height={3} color="blue" />
