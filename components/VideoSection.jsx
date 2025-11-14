@@ -1,4 +1,4 @@
-// No "use client" → pure server component
+// No "use client"
 
 import React from "react";
 
@@ -19,6 +19,8 @@ const CheckIcon = () => (
 );
 
 const VideoSection = () => {
+  const VIDEO_ID = "AymTz4x1OnE";
+
   const features = [
     {
       name: "Seamless Integration",
@@ -53,15 +55,22 @@ const VideoSection = () => {
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12 items-center">
-          {/* Lightweight Video Placeholder (click → loads YouTube) */}
-          <div className="aspect-video w-full rounded-xl overflow-hidden shadow-xl relative bg-gray-200">
+          
+          {/* Thumbnail + Click to Play */}
+          <div className="aspect-video w-full rounded-xl overflow-hidden shadow-xl relative">
+            <img
+              src={`https://img.youtube.com/vi/${VIDEO_ID}/hqdefault.jpg`}
+              alt="Video thumbnail"
+              loading="lazy"
+              className="w-full h-full object-cover"
+            />
+
             <button
-              className="absolute inset-0 flex items-center justify-center bg-black/40 text-white text-xl font-semibold"
+              className="absolute inset-0 flex items-center justify-center bg-black/40 text-white text-3xl font-semibold"
               onClick={(e) => {
                 const container = e.currentTarget.parentNode;
                 const iframe = document.createElement("iframe");
-                iframe.src =
-                  "https://www.youtube.com/embed/AymTz4x1OnE?autoplay=1";
+                iframe.src = `https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1`;
                 iframe.loading = "lazy";
                 iframe.width = "100%";
                 iframe.height = "100%";
@@ -72,11 +81,11 @@ const VideoSection = () => {
                 container.appendChild(iframe);
               }}
             >
-              ▶ Play Video
+              ▶
             </button>
           </div>
 
-          {/* Text Section */}
+          {/* Text Features */}
           <div>
             <ul className="space-y-8">
               {features.map((feature) => (
@@ -94,6 +103,7 @@ const VideoSection = () => {
               ))}
             </ul>
           </div>
+
         </div>
       </div>
     </section>

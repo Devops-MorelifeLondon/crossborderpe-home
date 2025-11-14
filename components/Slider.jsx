@@ -36,7 +36,7 @@ const Slider = React.memo(() => {
               loading="lazy"
               width={160}
               height={60}
-              priority={index < 5}
+              
               draggable={false}
               className="h-full w-auto object-contain select-none"
             />
