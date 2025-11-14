@@ -27,8 +27,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         
+        {/* Bing / MS Site validation */}
         <meta name="msvalidate.01" content="5BC544E30D7A6B30B66C8D57F437BB43" />
-        {/* ✅ Microsoft Clarity */}
+
+        {/* ✅ Microsoft Clarity – non-blocking */}
         <Script id="ms-clarity" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
@@ -38,6 +40,26 @@ export default function RootLayout({ children }) {
             })(window, document, "clarity", "script", "u5g8py0ewt");
           `}
         </Script>
+
+        {/* ✅ Google Analytics – fully optimized */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R1N18JJ1JW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R1N18JJ1JW');
+          `}
+        </Script>
+
+        {/* ✅ Jotform Agent – loaded last, non-blocking */}
+        <Script
+          src="https://cdn.jotfor.ms/agent/embedjs/019a822b719976c0aca539928c8ec215fc10/embed.js"
+          strategy="lazyOnload"
+        />
 
         <ReCaptchaProviderWrapper>
           <NextTopLoader height={3} color="blue" />
