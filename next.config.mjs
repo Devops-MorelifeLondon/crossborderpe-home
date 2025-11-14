@@ -1,37 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  compress: true,
+  poweredByHeader: false,
 
   images: {
-    unoptimized: false, // enable Next.js image optimization
-    formats: ["image/avif", "image/webp"], // best performance formats
+    unoptimized: false,
+    formats: ["image/avif", "image/webp"],
   },
-
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production" ? { exclude: ["error"] } : false,
-  },
-
-  swcMinify: true, // fastest minification
-
-  compress: true, // gzip compression ON
 
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: [
-      "lodash",
-      "date-fns",
-      "react-icons",
-      "@mui/icons-material",
-    ],
+    optimizePackageImports: true,
+    serverActions: {
+      allowedOrigins: ["*"],
+    },
   },
 
-  webpack(config) {
-    // Enable caching for faster builds
-    config.cache = {
-      type: "filesystem",
-    };
-    return config;
-  },
+  reactStrictMode: true,
 };
 
 export default nextConfig;

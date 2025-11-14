@@ -33,6 +33,7 @@ const Slider = React.memo(() => {
             <Image
               src={logo.src}
               alt={logo.alt}
+              loading="lazy"
               width={160}
               height={60}
               priority={index < 5}
