@@ -1,19 +1,39 @@
-import { CheckCircle2 } from 'lucide-react';
-import React from 'react';
+// No "use client" → pure server component
+
+import React from "react";
+
+const CheckIcon = () => (
+  <svg
+    className="h-7 w-7 text-blue-600 mt-0.5 flex-shrink-0"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>
+);
 
 const VideoSection = () => {
   const features = [
     {
-      name: 'Seamless Integration',
-      description: 'Quickly set up your account and integrate with your existing business workflows.',
+      name: "Seamless Integration",
+      description:
+        "Quickly set up your account and integrate with your existing business workflows.",
     },
     {
-      name: 'Transparent Fees',
-      description: 'Understand all costs upfront with no hidden charges, ensuring cost-effective transactions.',
+      name: "Transparent Fees",
+      description:
+        "Understand all costs upfront with no hidden charges, ensuring cost-effective transactions.",
     },
     {
-      name: 'Dedicated Support',
-      description: 'Get 24/7 access to our expert support team to assist you with any questions.',
+      name: "Dedicated Support",
+      description:
+        "Get 24/7 access to our expert support team to assist you with any questions.",
     },
   ];
 
@@ -24,36 +44,44 @@ const VideoSection = () => {
           <h2 className="text-base font-semibold leading-7 text-blue-600">
             How It Works
           </h2>
-         
+
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            Watch our brief introductory video to see how our platform simplifies international payments and helps you grow your business globally.
+            Watch our brief introductory video to see how our platform
+            simplifies international payments and helps you grow your business
+            globally.
           </p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12 items-center">
-          {/* Left: YouTube Video Embed */}
-          <div className="aspect-video w-full rounded-xl overflow-hidden shadow-xl ">
-            <iframe
-              width="100%"
-              height="100%"
-              loading='lazy'
-              src="https://www.youtube.com/embed/AymTz4x1OnE" // Replace with your actual video ID
-              title="Introduction to CrossborderPe"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          {/* Lightweight Video Placeholder (click → loads YouTube) */}
+          <div className="aspect-video w-full rounded-xl overflow-hidden shadow-xl relative bg-gray-200">
+            <button
+              className="absolute inset-0 flex items-center justify-center bg-black/40 text-white text-xl font-semibold"
+              onClick={(e) => {
+                const container = e.currentTarget.parentNode;
+                const iframe = document.createElement("iframe");
+                iframe.src =
+                  "https://www.youtube.com/embed/AymTz4x1OnE?autoplay=1";
+                iframe.loading = "lazy";
+                iframe.width = "100%";
+                iframe.height = "100%";
+                iframe.allow =
+                  "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                iframe.allowFullscreen = true;
+                container.innerHTML = "";
+                container.appendChild(iframe);
+              }}
+            >
+              ▶ Play Video
+            </button>
           </div>
 
-          {/* Right: Text Content */}
+          {/* Text Section */}
           <div>
             <ul className="space-y-8">
               {features.map((feature) => (
                 <li key={feature.name} className="flex">
-                  <CheckCircle2
-                    className="flex-shrink-0 h-7 w-7 text-blue-600 mt-0.5"
-                    aria-hidden="true"
-                  />
+                  <CheckIcon />
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold leading-6 text-gray-900">
                       {feature.name}
