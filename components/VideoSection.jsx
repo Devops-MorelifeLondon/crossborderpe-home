@@ -36,6 +36,7 @@ const VideoSection = () => {
             <iframe
               width="100%"
               height="100%"
+              loading='lazy'
               src="https://www.youtube.com/embed/AymTz4x1OnE" // Replace with your actual video ID
               title="Introduction to CrossborderPe"
               frameBorder="0"
