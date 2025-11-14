@@ -29,7 +29,7 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <CrossBorderPELogo className="h-10" />
+            <CrossBorderPELogo className="h-5" />
             <span className="sr-only">Cross Border PE Home</span>
           </Link>
 

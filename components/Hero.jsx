@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Play, CheckCircle, Globe, Shield, Zap } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -14,8 +15,10 @@ const Hero = () => {
             <div className="inline-flex items-center justify-between px-4 py-2 sm:px-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg text-sm font-semibold text-blue-800 mb-6 sm:mb-8 border border-blue-100">
               <div className='flex justify-between items-center gap-3'>
                 Trusted Partner 
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/J_P_Morgan_Chase_Logo_2008_1.svg/2560px-J_P_Morgan_Chase_Logo_2008_1.svg.png" 
+                <Image
+                height={80}
+                width={300} 
+                  src="/J_P_Morgan.png" 
                   className='w-40 sm:w-60 object-contain' 
                   alt="JP Morgan Chase Logo" 
                 />
@@ -134,7 +137,7 @@ const Hero = () => {
                     <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-slate-200">
                       <div className="flex items-center space-x-3">
                         <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0">
-                          <img src="/flag/usa.png" alt="USA Flag" className="w-full h-full object-cover rounded-full" />
+                          <Image width={200} height={100} src="/flag/usa.png" alt="USA Flag" className="w-full h-full object-cover rounded-full" />
                         </div>
                         <div>
                           <div className="text-sm font-medium text-slate-900">USD</div>
@@ -151,7 +154,7 @@ const Hero = () => {
                     <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-slate-200">
                       <div className="flex items-center space-x-3">
                         <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0">
-                          <img src="/flag/uk.png" alt="UK Flag" className="w-full h-full object-cover rounded-full" />
+                          <Image width={200} height={100} src="/flag/uk.png" alt="UK Flag" className="w-full h-full object-cover rounded-full" />
                         </div>
                         <div>
                           <div className="text-sm font-medium text-slate-900">GBP</div>
@@ -168,7 +171,7 @@ const Hero = () => {
                     <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-slate-200">
                       <div className="flex items-center space-x-3">
                         <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0">
-                          <img src="/flag/singapore.png" alt="Singapore Flag" className="w-full h-full object-cover rounded-full"/>
+                          <Image width={200} height={100} src="/flag/singapore.png" alt="Singapore Flag" className="w-full h-full object-cover rounded-full"/>
                         </div>
                         <div>
                           <div className="text-sm font-medium text-slate-900">SGD</div>

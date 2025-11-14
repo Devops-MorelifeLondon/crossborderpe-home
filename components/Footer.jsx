@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Custom hook for live timezones
 const useLiveTimes = (timezones) => {
@@ -117,7 +118,7 @@ const Footer = () => {
           
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <img src="/Crossborderpe_colored.png" className="w-40 mb-2" alt="CrossBorderPe Logo" />
+            <Image height={100} width={200} src="/Crossborderpe_colored.png" className="w-40 mb-2" alt="CrossBorderPe Logo" />
             <p className="text-gray-600 mb-6 max-w-md">
               Leading cross-border payment solutions provider for seamless international transactions.
             </p>
