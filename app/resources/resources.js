@@ -743,7 +743,7 @@ const Resources = () => {
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {featuredPosts.map((post) => (
-                  <Link key={post.id} href={`/resources/blog/${post.id}`} className="group">
+                  <div key={post.id} className="group">
                     <div className="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden hover:shadow-2xl transition-all">
                       <div className="relative overflow-hidden">
                         <img 
@@ -796,7 +796,7 @@ const Resources = () => {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>
