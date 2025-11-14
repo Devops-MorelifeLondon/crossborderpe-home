@@ -10,10 +10,6 @@ const nextConfig = {
 
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: true,
-    serverActions: {
-      allowedOrigins: ["*"],
-    },
   },
 
   reactStrictMode: true,
