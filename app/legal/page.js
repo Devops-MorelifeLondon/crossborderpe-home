@@ -9,7 +9,6 @@ export const metadata = {
   title: "Legal, Privacy & Compliance | CrossborderPe",
   description:
     "Review CrossborderPe’s Terms of Use, Privacy Policy, Security measures, and Compliance standards. Learn how we safeguard data and ensure secure global payment operations.",
-  robots: "noindex, nofollow",
   alternates: {
     canonical: `${baseUrl}/legal`,
   },
