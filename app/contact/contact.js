@@ -46,19 +46,19 @@ const contactMethods = [
     icon: Phone,
     title: "Phone Support",
     description: "Speak directly to a customer specialist.",
-    contact: "+91 73730 26003",
+    contact: "+91 63795 70296",
     availability: "Mon - Fri, 9 AM - 6 PM IST",
     action: "Call Now",
-    href: "tel:+917373026003",
+    href: "tel:+916379570296",
   },
   {
     icon: FaWhatsapp,
     title: "WhatsApp Support",
     description: "Connect instantly with our team via WhatsApp.",
-    contact: "+91 73730 26003",
+    contact: "+91 63795 70296",
     availability: "Response within minutes",
     action: "Chat on WhatsApp",
-    href: "https://wa.me/917373026003",
+    href: "https://wa.me/916379570296",
   },
 ];
 

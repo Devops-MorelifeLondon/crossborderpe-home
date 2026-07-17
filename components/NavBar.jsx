@@ -34,15 +34,15 @@ export default function NavBar() {
               <Mail className="w-3.5 h-3.5 text-blue-400" />
               <span>info@crossborderpe.com</span>
             </a>
-            <a href="tel:+917373026003" className="flex items-center space-x-1.5 hover:text-white transition-colors">
+            <a href="tel:+916379570296" className="flex items-center space-x-1.5 hover:text-white transition-colors">
               <Phone className="w-3.5 h-3.5 text-blue-400" />
-              <span>+91 73730 26003</span>
+              <span>+91 63795 70296</span>
             </a>
           </div>
           <div className="flex items-center">
-            <a href="https://wa.me/917373026003" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-1.5 bg-green-600 text-white hover:bg-green-500 px-2.5 py-0.5 rounded-full transition-colors font-medium">
+            <a href="https://wa.me/916379570296" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-1.5 bg-green-600 text-white hover:bg-green-500 px-2.5 py-0.5 rounded-full transition-colors font-medium">
               <FaWhatsapp className="w-3.5 h-3.5" />
-              <span>WhatsApp: +91 73730 26003</span>
+              <span>WhatsApp: +91 63795 70296</span>
             </a>
           </div>
         </div>
