@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { FaWhatsapp } from "react-icons/fa";
 import {
   ArrowRight,
   Award,
@@ -32,7 +33,6 @@ const heroFeatures = [
 ];
 
 const contactMethods = [
- 
   {
     icon: Mail,
     title: "Email Support",
@@ -41,6 +41,24 @@ const contactMethods = [
     availability: "Response within 2 hours",
     action: "Send Email",
     href: "mailto:info@crossborderpe.com",
+  },
+  {
+    icon: Phone,
+    title: "Phone Support",
+    description: "Speak directly to a customer specialist.",
+    contact: "+91 73730 26003",
+    availability: "Mon - Fri, 9 AM - 6 PM IST",
+    action: "Call Now",
+    href: "tel:+917373026003",
+  },
+  {
+    icon: FaWhatsapp,
+    title: "WhatsApp Support",
+    description: "Connect instantly with our team via WhatsApp.",
+    contact: "+91 73730 26003",
+    availability: "Response within minutes",
+    action: "Chat on WhatsApp",
+    href: "https://wa.me/917373026003",
   },
 ];
 
@@ -291,7 +309,7 @@ const ContactPage = () => {
                 We're available through multiple channels. Choose the one that works best for you.
               </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {contactMethods.map((method, index) => (
                 <div
                   key={index}

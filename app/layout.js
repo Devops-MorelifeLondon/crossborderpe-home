@@ -94,6 +94,7 @@ export default function RootLayout({ children }) {
         <ReCaptchaProviderWrapper>
           <NextTopLoader height={3} color="blue" />
           <NavBar />
+          <div className="h-12 sm:h-9" />
           {children}
           <Footer />
           <a
