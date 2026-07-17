@@ -2,7 +2,8 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Mail, Phone } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import CrossBorderPELogo from './Logo';
 
 const navLinks = [
@@ -24,9 +25,33 @@ export default function NavBar() {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
-      <div className="w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <header className="fixed inset-x-0 top-0 z-50 flex flex-col">
+      {/* Top Contact Strip */}
+      <div className="w-full bg-slate-950 text-slate-300 border-b border-slate-900 text-[11px] sm:text-xs py-2">
+        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-y-1.5 gap-x-4">
+          <div className="flex items-center space-x-4 sm:space-x-6">
+            <a href="mailto:info@crossborderpe.com" className="flex items-center space-x-1.5 hover:text-white transition-colors">
+              <Mail className="w-3.5 h-3.5 text-blue-400" />
+              <span>info@crossborderpe.com</span>
+            </a>
+            <a href="tel:+917373026003" className="flex items-center space-x-1.5 hover:text-white transition-colors">
+              <Phone className="w-3.5 h-3.5 text-blue-400" />
+              <span>+91 73730 26003</span>
+            </a>
+          </div>
+          <div className="flex items-center">
+            <a href="https://wa.me/917373026003" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-1.5 bg-green-600 text-white hover:bg-green-500 px-2.5 py-0.5 rounded-full transition-colors font-medium">
+              <FaWhatsapp className="w-3.5 h-3.5" />
+              <span>WhatsApp: +91 73730 26003</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navbar */}
+      <div className="bg-white/95 backdrop-blur-md border-b border-gray-100 w-full">
+        <div className="w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <CrossBorderPELogo className="h-5" />
@@ -78,6 +103,7 @@ export default function NavBar() {
           </button>
         </div>
       </div>
+    </div>
 
       {/* Mobile navigation */}
       {isMenuOpen && (
