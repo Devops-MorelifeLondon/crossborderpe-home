@@ -5,7 +5,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
 export const metadata = {
   title: "Contact Us | CrossborderPe - Global Cross-Border Payments",
   description:
-    "Connect with CrossborderPe’s payment specialists for global, secure, and multi-currency business solutions. Get expert assistance via 24/7 live chat, phone, and email.",
+    "Connect with CrossborderPe’s payment specialists for global, secure, and multi-currency business solutions. Get expert assistance via live chat and email.",
   keywords:
     "cross-border payments, global payments, payment support, contact, multi-currency, business payments, fintech support, global money transfer help",
   robots: "index, follow",
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Contact Us | CrossborderPe - Global Cross-Border Payments",
     description:
-      "Reach our payment experts for secure and fast global payment assistance. Live chat, phone, and email support available 24/7.",
+      "Reach our payment experts for secure and fast global payment assistance. Live chat and email support available 24/7.",
     url: `${baseUrl}/contact`,
     type: "website",
     images: [
@@ -31,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contact Us | CrossborderPe",
     description:
-      "Talk to CrossborderPe’s support team for fast, secure global payment solutions. Available via live chat, phone, and email.",
+      "Talk to CrossborderPe’s support team for fast, secure global payment solutions. Available via live chat and email.",
     images: [
       `${baseUrl}/Crossborderpe_colored.png`,
     ],

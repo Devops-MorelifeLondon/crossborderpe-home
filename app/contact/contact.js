@@ -16,7 +16,6 @@ import {
   Mail,
   MapPin,
   MessageSquare,
-  Phone,
   Shield,
   Twitter,
   User,
@@ -42,13 +41,13 @@ const contactMethods = [
     href: "mailto:info@crossborderpe.com",
   },
   {
-    icon: Phone,
-    title: "Phone Support",
-    description: "Speak directly to a customer specialist.",
-    contact: "+91 63795 70296",
-    availability: "Mon - Fri, 9 AM - 6 PM IST",
-    action: "Call Now",
-    href: "tel:+916379570296",
+    icon: Headphones,
+    title: "24/7 Specialist Support",
+    description: "Connect with our dedicated payment and enterprise specialists.",
+    contact: "Available 24/7",
+    availability: "Fast response for business inquiries",
+    action: "Send Inquiry",
+    href: "#inquiry-form",
   },
 ];
 
@@ -225,7 +224,7 @@ const ContactPage = () => {
                 </div>
               )}
 
-              <form onSubmit={handleFormSubmit} className="space-y-3">
+              <form id="inquiry-form" onSubmit={handleFormSubmit} className="space-y-3">
                 {["fullName", "contactNumber", "email", "message"].map((field) => (
                   <div key={field}>
                     <label className="text-xs font-medium text-slate-700 mb-1 block capitalize">

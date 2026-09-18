@@ -2,7 +2,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Mail, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import CrossBorderPELogo from './Logo';
 
 const navLinks = [
@@ -24,23 +24,7 @@ export default function NavBar() {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex flex-col">
-      {/* Top Contact Strip */}
-      <div className="w-full bg-slate-950 text-slate-300 border-b border-slate-900 text-[11px] sm:text-xs py-2">
-        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-y-1.5 gap-x-4">
-          <div className="flex items-center space-x-4 sm:space-x-6">
-            <a href="mailto:info@crossborderpe.com" className="flex items-center space-x-1.5 hover:text-white transition-colors">
-              <Mail className="w-3.5 h-3.5 text-blue-400" />
-              <span>info@crossborderpe.com</span>
-            </a>
-            <a href="tel:+916379570296" className="flex items-center space-x-1.5 hover:text-white transition-colors">
-              <Phone className="w-3.5 h-3.5 text-blue-400" />
-              <span>+91 63795 70296</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
+    <header className="fixed inset-x-0 top-0 z-50">
       {/* Main Navbar */}
       <div className="bg-white/95 backdrop-blur-md border-b border-gray-100 w-full">
         <div className="w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
