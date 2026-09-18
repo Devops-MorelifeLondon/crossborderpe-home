@@ -4,7 +4,6 @@ import Head from "next/head";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { FaWhatsapp } from "react-icons/fa";
 import {
   ArrowRight,
   Award,
@@ -50,15 +49,6 @@ const contactMethods = [
     availability: "Mon - Fri, 9 AM - 6 PM IST",
     action: "Call Now",
     href: "tel:+916379570296",
-  },
-  {
-    icon: FaWhatsapp,
-    title: "WhatsApp Support",
-    description: "Connect instantly with our team via WhatsApp.",
-    contact: "+91 63795 70296",
-    availability: "Response within minutes",
-    action: "Chat on WhatsApp",
-    href: "https://wa.me/916379570296",
   },
 ];
 
@@ -309,7 +299,7 @@ const ContactPage = () => {
                 We're available through multiple channels. Choose the one that works best for you.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
               {contactMethods.map((method, index) => (
                 <div
                   key={index}

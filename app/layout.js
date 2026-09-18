@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import NextTopLoader from "nextjs-toploader";
 import ReCaptchaProviderWrapper from "@/components/ReCaptchaProviderWrapper";
 import Script from "next/script";
-import { FaWhatsapp } from "react-icons/fa";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -97,18 +96,6 @@ export default function RootLayout({ children }) {
           <div className="h-12 sm:h-9" />
           {children}
           <Footer />
-          <a
-            href="https://wa.me/916379570296"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 flex items-center justify-center group"
-            aria-label="Chat on WhatsApp"
-          >
-            <FaWhatsapp className="w-6.5 h-6.5" />
-            <span className="absolute right-16 bg-slate-900 text-white text-xs py-1 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-md pointer-events-none">
-              Chat with us
-            </span>
-          </a>
         </ReCaptchaProviderWrapper>
       </body>
     </html>

@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, Mail, Phone } from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa';
 import CrossBorderPELogo from './Logo';
 
 const navLinks = [
@@ -37,12 +36,6 @@ export default function NavBar() {
             <a href="tel:+916379570296" className="flex items-center space-x-1.5 hover:text-white transition-colors">
               <Phone className="w-3.5 h-3.5 text-blue-400" />
               <span>+91 63795 70296</span>
-            </a>
-          </div>
-          <div className="flex items-center">
-            <a href="https://wa.me/916379570296" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-1.5 bg-green-600 text-white hover:bg-green-500 px-2.5 py-0.5 rounded-full transition-colors font-medium">
-              <FaWhatsapp className="w-3.5 h-3.5" />
-              <span>WhatsApp: +91 63795 70296</span>
             </a>
           </div>
         </div>
