@@ -460,86 +460,214 @@ export default function UKBusinessBankAccount() {
               </div>
             </div>
 
-            {/* Right Column - Overview Card */}
-            <div className="lg:col-span-5">
-              <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden p-6 sm:p-8 space-y-6">
-                <div className="border-b border-slate-100 pb-4 flex items-center justify-between">
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                      <Landmark className="w-5 h-5 text-blue-600" />
-                      Dual-Track Banking Approach
+            {/* Right Column - Hero Contact / Eligibility Form */}
+            <div id="eligibility-form" className="lg:col-span-5">
+              <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden p-6 sm:p-8">
+                <div className="border-b border-slate-100 pb-4 mb-6">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                      <FileCheck className="w-5 h-5 text-blue-600" />
+                      Check Your Eligibility
                     </h3>
-                    <p className="text-xs text-slate-500 mt-0.5">
-                      High-Street First + Built-In Digital Contingency
-                    </p>
-                  </div>
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100">
-                    Dual-Track
-                  </span>
-                </div>
-
-                {/* Track A High-Street */}
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
-                      Track A: High-street Banks
-                    </span>
-                    <span className="text-xs text-slate-500 font-medium">
-                      Primary Route
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100">
+                      Free Assessment
                     </span>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {["HSBC", "Barclays", "Lloyds Bank", "NatWest", "Santander"].map(
-                      (bank, idx) => (
-                        <span
-                          key={idx}
-                          className="inline-flex items-center px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-xs sm:text-sm font-medium text-slate-800"
-                        >
-                          <Building2 className="w-3.5 h-3.5 mr-1.5 text-blue-600" />
-                          {bank}
-                        </span>
-                      )
-                    )}
-                  </div>
-                </div>
-
-                {/* Track B Digital & EMIs */}
-                <div className="space-y-3 pt-4 border-t border-slate-100">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
-                      Track B: Digital & EMIs
-                    </span>
-                    <span className="text-xs text-slate-500 font-medium">
-                      Backup & Speed
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      "Wise",
-                      "Revolut Business",
-                      "Tide",
-                      "Monzo Business",
-                      "Starling Bank",
-                    ].map((bank, idx) => (
-                      <span
-                        key={idx}
-                        className="inline-flex items-center px-3 py-1.5 rounded-lg bg-blue-50/70 border border-blue-100 text-xs sm:text-sm font-medium text-blue-900"
-                      >
-                        <Sparkles className="w-3.5 h-3.5 mr-1.5 text-blue-600" />
-                        {bank}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 text-xs text-slate-600 flex items-start space-x-3">
-                  <ShieldCheck className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
-                  <p className="leading-relaxed font-normal">
-                    Pre-vetted documentation ensures your application is
-                    complete and compliant before submission to any banking
-                    institution.
+                  <p className="text-xs sm:text-sm text-slate-500 mt-1 font-normal">
+                    Get pre-screened for high-street & digital UK business accounts.
                   </p>
                 </div>
+
+                {formSubmitted ? (
+                  <div className="py-8 text-center space-y-4">
+                    <div className="w-14 h-14 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
+                      <CheckCircle className="w-8 h-8" />
+                    </div>
+                    <h4 className="text-xl font-bold text-slate-900">
+                      Inquiry Received!
+                    </h4>
+                    <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                      Thank you! Our compliance specialists will review your details and get back to you with your tailored banking assessment.
+                    </p>
+                    <button
+                      onClick={() => {
+                        setFormSubmitted(false);
+                        setFormData({
+                          name: "",
+                          email: "",
+                          countryOfResidence: "",
+                          hasUkCompany: "Yes",
+                          businessType: "",
+                          monthlyTurnover: "",
+                          message: "",
+                        });
+                      }}
+                      className="mt-2 text-xs font-semibold text-blue-600 hover:text-blue-700 underline cursor-pointer"
+                    >
+                      Submit another inquiry
+                    </button>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    {formError && (
+                      <div className="p-3 rounded-lg bg-red-50 border border-red-200 text-red-700 text-xs flex items-start gap-2">
+                        <AlertCircle className="w-4 h-4 shrink-0 mt-0.5 text-red-600" />
+                        <span>{formError}</span>
+                      </div>
+                    )}
+
+                    {/* Name & Email */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-700 mb-1">
+                          Name <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          name="name"
+                          required
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          placeholder="Your full name"
+                          className="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-xs sm:text-sm font-normal"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-700 mb-1">
+                          Email <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="email"
+                          name="email"
+                          required
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          placeholder="name@company.com"
+                          className="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-xs sm:text-sm font-normal"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Country of Residence & UK Company */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-700 mb-1">
+                          Country of residence <span className="text-red-500">*</span>
+                        </label>
+                        <select
+                          name="countryOfResidence"
+                          required
+                          value={formData.countryOfResidence}
+                          onChange={handleInputChange}
+                          className="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-xs sm:text-sm font-normal"
+                        >
+                          <option value="">Select country</option>
+                          {countriesList.map((c, i) => (
+                            <option key={i} value={c}>
+                              {c}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-700 mb-1">
+                          UK Company?
+                        </label>
+                        <div className="grid grid-cols-2 gap-2">
+                          {["Yes", "No"].map((opt) => (
+                            <label
+                              key={opt}
+                              className={`flex items-center justify-center py-2 px-3 rounded-lg border text-xs font-semibold cursor-pointer transition-all ${
+                                formData.hasUkCompany === opt
+                                  ? "bg-blue-50 border-blue-600 text-blue-700"
+                                  : "bg-white border-slate-300 text-slate-700 hover:bg-slate-50"
+                              }`}
+                            >
+                              <input
+                                type="radio"
+                                name="hasUkCompany"
+                                value={opt}
+                                checked={formData.hasUkCompany === opt}
+                                onChange={handleInputChange}
+                                className="sr-only"
+                              />
+                              <span>{opt}</span>
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Business Type & Turnover */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-700 mb-1">
+                          Primary business type
+                        </label>
+                        <input
+                          type="text"
+                          name="businessType"
+                          value={formData.businessType}
+                          onChange={handleInputChange}
+                          placeholder="e.g. E-commerce / SaaS"
+                          className="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-xs sm:text-sm font-normal"
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-xs font-semibold text-slate-700 mb-1">
+                          Monthly turnover
+                        </label>
+                        <input
+                          type="text"
+                          name="monthlyTurnover"
+                          value={formData.monthlyTurnover}
+                          onChange={handleInputChange}
+                          placeholder="e.g. £10k - £50k"
+                          className="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-xs sm:text-sm font-normal"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Message */}
+                    <div>
+                      <label className="block text-xs font-semibold text-slate-700 mb-1">
+                        Message (optional)
+                      </label>
+                      <textarea
+                        name="message"
+                        rows={2}
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        placeholder="Any specific bank preference or requirements..."
+                        className="w-full px-3.5 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-xs sm:text-sm resize-none font-normal"
+                      ></textarea>
+                    </div>
+
+                    {/* Submit Button */}
+                    <button
+                      type="submit"
+                      disabled={formSubmitting}
+                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3.5 rounded-xl font-semibold text-sm hover:from-blue-700 hover:to-blue-800 transition-all flex items-center justify-center space-x-2 shadow-md hover:shadow-lg disabled:opacity-50 cursor-pointer"
+                    >
+                      {formSubmitting ? (
+                        <span>Checking eligibility...</span>
+                      ) : (
+                        <>
+                          <Send className="w-4 h-4" />
+                          <span>Check my eligibility (free)</span>
+                        </>
+                      )}
+                    </button>
+
+                    <div className="flex items-center justify-center gap-1.5 text-[11px] text-slate-500 font-normal pt-1">
+                      <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
+                      <span>100% confidential & compliance pre-vetted</span>
+                    </div>
+                  </form>
+                )}
               </div>
             </div>
           </div>
@@ -1226,7 +1354,7 @@ export default function UKBusinessBankAccount() {
       {/* =========================================================================
           CHECK YOUR ELIGIBILITY (PRE-ASSESSMENT FORM)
       ========================================================================== */}
-      <section id="eligibility-form" className="py-16 bg-slate-50">
+      <section id="bottom-eligibility-form" className="py-16 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
             <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-100">
