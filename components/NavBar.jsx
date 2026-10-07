@@ -8,6 +8,7 @@ import CrossBorderPELogo from './Logo';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Solutions', href: '/solutions' },
+  { label: 'UK Business Account', href: '/uk-business-bank-account' },
   { label: 'Developers', href: '/developers' },
   { label: 'Resources', href: '/resources' },
   { label: 'Contact', href: '/contact' },

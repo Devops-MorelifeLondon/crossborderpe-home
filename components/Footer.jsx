@@ -90,6 +90,7 @@ const Footer = () => {
 
   const footerLinks = {
     Solutions: [
+      { name: "UK Business Bank Account", href: "/uk-business-bank-account" },
       { name: "Payment Processing", href: "/solutions#payment-processing" },
       { name: "Mobile Payments", href: "/solutions#mobile-payments" },
       { name: "Global Expansion", href: "/solutions#global-expansion" },

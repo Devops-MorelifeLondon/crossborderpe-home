@@ -23,7 +23,6 @@ import {
   FileText,
   Banknote,
   DollarSign,
-  Card,
   Building,
   MessageCircle,
   PhoneCall,
