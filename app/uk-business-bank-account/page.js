@@ -40,6 +40,7 @@ export const metadata = {
   },
 };
 
+
 export default function Page() {
   const faqSchema = {
     "@context": "https://schema.org",
