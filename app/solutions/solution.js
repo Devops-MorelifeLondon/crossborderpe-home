@@ -176,7 +176,7 @@ const solutionsData = {
         security: "PCI DSS compliant",
         growth: "Scale revenue globally"
       },
-      icon: Card,
+      icon: CreditCard,
       cta: "Setup Payment Gateway"
     },
     {
