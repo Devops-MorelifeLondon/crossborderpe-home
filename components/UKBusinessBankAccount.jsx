@@ -379,7 +379,7 @@ export default function UKBusinessBankAccount() {
 
               {/* H1 */}
               <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight tracking-tight">
-                Open your UK business bank account without the guesswork
+                Open a UK Business Bank Account
               </h1>
 
               {/* Sub-headline */}
