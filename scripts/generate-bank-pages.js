@@ -88,14 +88,29 @@ export default function Page() {
 
 function run() {
   console.log("=================================================");
-  console.log("🚀 Starting Business Bank Account Pages Generator");
+  console.log("🚀 Starting Business Bank Account Pages Clean & Re-generate");
   console.log("=================================================");
 
+  // Step 1: Remove existing banking pages
+  const existingDirs = fs.readdirSync(appDir).filter((file) => {
+    const fullPath = path.join(appDir, file);
+    return fs.statSync(fullPath).isDirectory() && file.endsWith("-business-bank-account");
+  });
+
+  console.log(`🧹 Found ${existingDirs.length} existing bank page folders to clean.`);
+  let removedCount = 0;
+  for (const dirName of existingDirs) {
+    const fullPath = path.join(appDir, dirName);
+    fs.rmSync(fullPath, { recursive: true, force: true });
+    removedCount++;
+  }
+  console.log(`🗑️ Successfully deleted ${removedCount} bank page folders.`);
+
+  // Step 2: Load normalized country accounts from cbp-1.json
   const accounts = getAllCountryBankAccounts();
-  console.log(`Found ${accounts.length} countries in cbp-1.json`);
+  console.log(`\n📋 Loaded ${accounts.length} countries from lib/cbp-1.json.`);
 
   let createdCount = 0;
-  let updatedCount = 0;
   const generatedSlugs = [];
 
   for (const account of accounts) {
@@ -103,19 +118,20 @@ function run() {
     const pageDir = path.join(appDir, slug);
     const pageFile = path.join(pageDir, "page.js");
 
-    if (!fs.existsSync(pageDir)) {
-      fs.mkdirSync(pageDir, { recursive: true });
-      createdCount++;
-    } else {
-      updatedCount++;
-    }
-
+    fs.mkdirSync(pageDir, { recursive: true });
     const pageContent = generatePageTemplate(slug);
     fs.writeFileSync(pageFile, pageContent, "utf8");
-    generatedSlugs.push({ rank: account.rank, country: account.country, slug });
+
+    createdCount++;
+    generatedSlugs.push({
+      rank: account.rank,
+      country: account.country,
+      slug,
+      title: account.seo.title,
+    });
   }
 
-  // Generate an index manifest for convenience
+  // Step 3: Write manifest
   const manifestFile = path.join(rootDir, "lib", "bank-pages-manifest.json");
   fs.writeFileSync(
     manifestFile,
@@ -125,7 +141,6 @@ function run() {
 
   console.log(`\n✅ Generated Manifest: ${manifestFile}`);
   console.log(`📁 Total Directories Created: ${createdCount}`);
-  console.log(`📝 Total Directories Updated: ${updatedCount}`);
   console.log(`🎉 Successfully generated ${generatedSlugs.length} business bank account pages!`);
   console.log("=================================================\n");
 }

@@ -2,501 +2,601 @@
   {
     "rank": 1,
     "country": "United States",
-    "slug": "us-business-bank-account"
+    "slug": "us-business-bank-account",
+    "title": "Open a US Business Bank Account | Remote & Non-Resident"
   },
   {
     "rank": 2,
     "country": "United Kingdom",
-    "slug": "uk-business-bank-account"
+    "slug": "uk-business-bank-account",
+    "title": "Open a UK Business Bank Account | Non-Resident & Local"
   },
   {
     "rank": 3,
     "country": "Singapore",
-    "slug": "singapore-business-bank-account"
+    "slug": "singapore-business-bank-account",
+    "title": "Open a Singapore Business Bank Account | Setup Guide"
   },
   {
     "rank": 4,
     "country": "United Arab Emirates",
-    "slug": "uae-business-bank-account"
+    "slug": "uae-business-bank-account",
+    "title": "Open a UAE Business Bank Account | Corporate Banking"
   },
   {
     "rank": 5,
     "country": "Hong Kong",
-    "slug": "hong-kong-business-bank-account"
+    "slug": "hong-kong-business-bank-account",
+    "title": "Open a Hong Kong Business Bank Account | Fast Setup"
   },
   {
     "rank": 6,
     "country": "Switzerland",
-    "slug": "switzerland-business-bank-account"
+    "slug": "switzerland-business-bank-account",
+    "title": "Open a Swiss Business Bank Account | AG & GmbH Banking"
   },
   {
     "rank": 7,
     "country": "Germany",
-    "slug": "germany-business-bank-account"
+    "slug": "germany-business-bank-account",
+    "title": "Business Bank Account in Germany | Non-Resident Opening"
   },
   {
     "rank": 8,
     "country": "Canada",
-    "slug": "canada-business-bank-account"
+    "slug": "canada-business-bank-account",
+    "title": "Open a Canadian Business Bank Account | Canada Banking"
   },
   {
     "rank": 9,
     "country": "Australia",
-    "slug": "australia-business-bank-account"
+    "slug": "australia-business-bank-account",
+    "title": "Open an Australian Business Bank Account | Remote Setup"
   },
   {
     "rank": 10,
     "country": "Netherlands",
-    "slug": "netherlands-business-bank-account"
+    "slug": "netherlands-business-bank-account",
+    "title": "Open a Netherlands Business Bank Account | Fast Corporate Setup"
   },
   {
     "rank": 11,
     "country": "France",
-    "slug": "france-business-bank-account"
+    "slug": "france-business-bank-account",
+    "title": "Open a Business Bank Account in France | Corporate Setup"
   },
   {
     "rank": 12,
     "country": "Japan",
-    "slug": "japan-business-bank-account"
+    "slug": "japan-business-bank-account",
+    "title": "Open a Business Bank Account in Japan | Corporate Support"
   },
   {
     "rank": 13,
     "country": "China",
-    "slug": "china-business-bank-account"
+    "slug": "china-business-bank-account",
+    "title": "Open a China Business Bank Account | Corporate Setup"
   },
   {
     "rank": 14,
     "country": "India",
-    "slug": "india-business-bank-account"
+    "slug": "india-business-bank-account",
+    "title": "Open a Business Bank Account in India | Resident & Global"
   },
   {
     "rank": 15,
     "country": "Ireland",
-    "slug": "ireland-business-bank-account"
+    "slug": "ireland-business-bank-account",
+    "title": "Open an Irish Business Bank Account | Non-Resident Guide"
   },
   {
     "rank": 16,
     "country": "Luxembourg",
-    "slug": "luxembourg-business-bank-account"
+    "slug": "luxembourg-business-bank-account",
+    "title": "Open a Luxembourg Business Bank Account | Fast & Remote"
   },
   {
     "rank": 17,
     "country": "Cyprus",
-    "slug": "cyprus-business-bank-account"
+    "slug": "cyprus-business-bank-account",
+    "title": "Open a Cyprus Business Bank Account | Corporate Banking"
   },
   {
     "rank": 18,
     "country": "Malta",
-    "slug": "malta-business-bank-account"
+    "slug": "malta-business-bank-account",
+    "title": "Open a Malta Business Bank Account | Non-Residents"
   },
   {
     "rank": 19,
     "country": "Estonia",
-    "slug": "estonia-business-bank-account"
+    "slug": "estonia-business-bank-account",
+    "title": "Open an Estonian Business Bank Account | Non-Resident Guide"
   },
   {
     "rank": 20,
     "country": "New Zealand",
-    "slug": "new-zealand-business-bank-account"
+    "slug": "new-zealand-business-bank-account",
+    "title": "Open a New Zealand Business Bank Account | Remote Setup"
   },
   {
     "rank": 21,
     "country": "British Virgin Islands",
-    "slug": "british-virgin-islands-business-bank-account"
+    "slug": "british-virgin-islands-business-bank-account",
+    "title": "BVI Business Bank Account Opening | Global Guide"
   },
   {
     "rank": 22,
     "country": "Cayman Islands",
-    "slug": "cayman-islands-business-bank-account"
+    "slug": "cayman-islands-business-bank-account",
+    "title": "Open a Cayman Islands Business Bank Account | Fast Setup"
   },
   {
     "rank": 23,
     "country": "South Korea",
-    "slug": "south-korea-business-bank-account"
+    "slug": "south-korea-business-bank-account",
+    "title": "Open a South Korea Business Bank Account | Non-Residents"
   },
   {
     "rank": 24,
     "country": "Brazil",
-    "slug": "brazil-business-bank-account"
+    "slug": "brazil-business-bank-account",
+    "title": "Open a Brazil Business Bank Account | Non-Residents & CNPJ"
   },
   {
     "rank": 25,
     "country": "Mexico",
-    "slug": "mexico-business-bank-account"
+    "slug": "mexico-business-bank-account",
+    "title": "Open a Business Bank Account in Mexico | Corporate Desk"
   },
   {
     "rank": 26,
     "country": "Spain",
-    "slug": "spain-business-bank-account"
+    "slug": "spain-business-bank-account",
+    "title": "Open a Business Bank Account in Spain | Corporate Banking"
   },
   {
     "rank": 27,
     "country": "Italy",
-    "slug": "italy-business-bank-account"
+    "slug": "italy-business-bank-account",
+    "title": "Open a Business Bank Account in Italy | Corporate Accounts"
   },
   {
     "rank": 28,
     "country": "Sweden",
-    "slug": "sweden-business-bank-account"
+    "slug": "sweden-business-bank-account",
+    "title": "Open a Business Bank Account in Sweden | Corporate Banking"
   },
   {
     "rank": 29,
     "country": "Denmark",
-    "slug": "denmark-business-bank-account"
+    "slug": "denmark-business-bank-account",
+    "title": "Open a Business Bank Account in Denmark | Fast Assistance"
   },
   {
     "rank": 30,
     "country": "Norway",
-    "slug": "norway-business-bank-account"
+    "slug": "norway-business-bank-account",
+    "title": "Open a Business Bank Account in Norway | Fast Setup"
   },
   {
     "rank": 31,
     "country": "Finland",
-    "slug": "finland-business-bank-account"
+    "slug": "finland-business-bank-account",
+    "title": "Open a Finland Business Bank Account | Corporate Setup"
   },
   {
     "rank": 32,
     "country": "Poland",
-    "slug": "poland-business-bank-account"
+    "slug": "poland-business-bank-account",
+    "title": "Open a Business Bank Account in Poland | Corporate Banking"
   },
   {
     "rank": 33,
     "country": "Belgium",
-    "slug": "belgium-business-bank-account"
+    "slug": "belgium-business-bank-account",
+    "title": "Open a Business Bank Account in Belgium | Belgian IBAN"
   },
   {
     "rank": 34,
     "country": "Austria",
-    "slug": "austria-business-bank-account"
+    "slug": "austria-business-bank-account",
+    "title": "Open an Austrian Business Bank Account | Fast Setup"
   },
   {
     "rank": 35,
     "country": "Saudi Arabia",
-    "slug": "saudi-arabia-business-bank-account"
+    "slug": "saudi-arabia-business-bank-account",
+    "title": "Open a Business Bank Account in Saudi Arabia"
   },
   {
     "rank": 36,
     "country": "South Africa",
-    "slug": "south-africa-business-bank-account"
+    "slug": "south-africa-business-bank-account",
+    "title": "Open a Business Bank Account in South Africa | Expert Setup"
   },
   {
     "rank": 37,
     "country": "Israel",
-    "slug": "israel-business-bank-account"
+    "slug": "israel-business-bank-account",
+    "title": "Open an Israel Business Bank Account | Non-Resident & Local"
   },
   {
     "rank": 38,
     "country": "Malaysia",
-    "slug": "malaysia-business-bank-account"
+    "slug": "malaysia-business-bank-account",
+    "title": "Open a Malaysia Business Bank Account | Corporate Banking"
   },
   {
     "rank": 39,
     "country": "Indonesia",
-    "slug": "indonesia-business-bank-account"
+    "slug": "indonesia-business-bank-account",
+    "title": "Open a Business Bank Account in Indonesia"
   },
   {
     "rank": 40,
     "country": "Vietnam",
-    "slug": "vietnam-business-bank-account"
+    "slug": "vietnam-business-bank-account",
+    "title": "Open a business bank account in Vietnam | Corporate banking"
   },
   {
     "rank": 41,
     "country": "Thailand",
-    "slug": "thailand-business-bank-account"
+    "slug": "thailand-business-bank-account",
+    "title": "Business Bank Account in Thailand | Corporate Banking Setup"
   },
   {
     "rank": 42,
     "country": "Philippines",
-    "slug": "philippines-business-bank-account"
+    "slug": "philippines-business-bank-account",
+    "title": "Open a Philippines Business Bank Account | Corporate Support"
   },
   {
     "rank": 43,
     "country": "Turkey",
-    "slug": "turkey-business-bank-account"
+    "slug": "turkey-business-bank-account",
+    "title": "Open a Turkey Business Bank Account | Non-Residents Welcome"
   },
   {
     "rank": 44,
     "country": "Taiwan",
-    "slug": "taiwan-business-bank-account"
+    "slug": "taiwan-business-bank-account",
+    "title": "Open a business bank account in Taiwan | Corporate banking"
   },
   {
     "rank": 45,
     "country": "Chile",
-    "slug": "chile-business-bank-account"
+    "slug": "chile-business-bank-account",
+    "title": "Open a Business Bank Account in Chile | Corporate Support"
   },
   {
     "rank": 46,
     "country": "Colombia",
-    "slug": "colombia-business-bank-account"
+    "slug": "colombia-business-bank-account",
+    "title": "Business Bank Account Colombia | Corporate Banking Setup"
   },
   {
     "rank": 47,
     "country": "Argentina",
-    "slug": "argentina-business-bank-account"
+    "slug": "argentina-business-bank-account",
+    "title": "Open a business bank account in Argentina | Fast Setup"
   },
   {
     "rank": 48,
     "country": "Peru",
-    "slug": "peru-business-bank-account"
+    "slug": "peru-business-bank-account",
+    "title": "Open a Business Bank Account in Peru | Corporate Banking"
   },
   {
     "rank": 49,
     "country": "Portugal",
-    "slug": "portugal-business-bank-account"
+    "slug": "portugal-business-bank-account",
+    "title": "Open a Portugal Business Bank Account | Non-Resident Guide"
   },
   {
     "rank": 50,
     "country": "Czech Republic",
-    "slug": "czech-republic-business-bank-account"
+    "slug": "czech-republic-business-bank-account",
+    "title": "Open a Czech Business Bank Account | Non-Resident Support"
   },
   {
     "rank": 51,
     "country": "Hungary",
-    "slug": "hungary-business-bank-account"
+    "slug": "hungary-business-bank-account",
+    "title": "Open a Business Bank Account in Hungary | Fast Setup"
   },
   {
     "rank": 52,
     "country": "Romania",
-    "slug": "romania-business-bank-account"
+    "slug": "romania-business-bank-account",
+    "title": "Open a Business Bank Account in Romania | Corporate Setup"
   },
   {
     "rank": 53,
     "country": "Greece",
-    "slug": "greece-business-bank-account"
+    "slug": "greece-business-bank-account",
+    "title": "Open a Business Bank Account in Greece | Fast Setup"
   },
   {
     "rank": 54,
     "country": "Lithuania",
-    "slug": "lithuania-business-bank-account"
+    "slug": "lithuania-business-bank-account",
+    "title": "Business Bank Account in Lithuania | Corporate Setup"
   },
   {
     "rank": 55,
     "country": "Latvia",
-    "slug": "latvia-business-bank-account"
+    "slug": "latvia-business-bank-account",
+    "title": "Open a Business Bank Account in Latvia | Corporate Banking"
   },
   {
     "rank": 56,
     "country": "Panama",
-    "slug": "panama-business-bank-account"
+    "slug": "panama-business-bank-account",
+    "title": "Open a Panama Business Bank Account | Non-Resident Guide"
   },
   {
     "rank": 57,
     "country": "Belize",
-    "slug": "belize-business-bank-account"
+    "slug": "belize-business-bank-account",
+    "title": "Open a Belize Business Bank Account | Corporate Banking"
   },
   {
     "rank": 58,
     "country": "Seychelles",
-    "slug": "seychelles-business-bank-account"
+    "slug": "seychelles-business-bank-account",
+    "title": "Seychelles Business Bank Account Setup | Open Remotely"
   },
   {
     "rank": 59,
     "country": "Mauritius",
-    "slug": "mauritius-business-bank-account"
+    "slug": "mauritius-business-bank-account",
+    "title": "Mauritius Business Bank Account Setup | Corporate Banking"
   },
   {
     "rank": 60,
     "country": "Bahamas",
-    "slug": "bahamas-business-bank-account"
+    "slug": "bahamas-business-bank-account",
+    "title": "Open a Bahamas Business Bank Account | Corporate Desk"
   },
   {
     "rank": 61,
     "country": "Bermuda",
-    "slug": "bermuda-business-bank-account"
+    "slug": "bermuda-business-bank-account",
+    "title": "Open a Bermuda Business Bank Account | Fast Corporate Setup"
   },
   {
     "rank": 62,
     "country": "Isle of Man",
-    "slug": "isle-of-man-business-bank-account"
+    "slug": "isle-of-man-business-bank-account",
+    "title": "Open an Isle of Man Business Bank Account | Expert Support"
   },
   {
     "rank": 63,
     "country": "Jersey",
-    "slug": "jersey-business-bank-account"
+    "slug": "jersey-business-bank-account",
+    "title": "Open a Jersey Business Bank Account | Corporate Setup"
   },
   {
     "rank": 64,
     "country": "Guernsey",
-    "slug": "guernsey-business-bank-account"
+    "slug": "guernsey-business-bank-account",
+    "title": "Open a Guernsey Business Bank Account | Corporate Banking"
   },
   {
     "rank": 65,
     "country": "Liechtenstein",
-    "slug": "liechtenstein-business-bank-account"
+    "slug": "liechtenstein-business-bank-account",
+    "title": "Open a Business Bank Account in Liechtenstein | Corporate Banking"
   },
   {
     "rank": 66,
     "country": "Monaco",
-    "slug": "monaco-business-bank-account"
+    "slug": "monaco-business-bank-account",
+    "title": "Monaco Business Bank Account Setup | Fast Approvals"
   },
   {
     "rank": 67,
     "country": "Andorra",
-    "slug": "andorra-business-bank-account"
+    "slug": "andorra-business-bank-account",
+    "title": "Open an Andorra Business Bank Account | Corporate Banking"
   },
   {
     "rank": 68,
     "country": "Gibraltar",
-    "slug": "gibraltar-business-bank-account"
+    "slug": "gibraltar-business-bank-account",
+    "title": "Gibraltar Business Bank Account Opening | Non-Residents"
   },
   {
     "rank": 69,
     "country": "Qatar",
-    "slug": "qatar-business-bank-account"
-  },
-  {
-    "rank": 71,
-    "country": "Bahrain",
-    "slug": "bahrain-business-bank-account"
+    "slug": "qatar-business-bank-account",
+    "title": "Open a Qatar Business Bank Account | Corporate Advisory"
   },
   {
     "rank": 70,
     "country": "Kuwait",
-    "slug": "kuwait-business-bank-account"
+    "slug": "kuwait-business-bank-account",
+    "title": "Open a Business Bank Account in Kuwait | Corporate Banking"
+  },
+  {
+    "rank": 71,
+    "country": "Bahrain",
+    "slug": "bahrain-business-bank-account",
+    "title": "Open a Bahrain Business Bank Account | Corporate Banking"
   },
   {
     "rank": 72,
     "country": "Oman",
-    "slug": "oman-business-bank-account"
+    "slug": "oman-business-bank-account",
+    "title": "Open a Business Bank Account in Oman | Corporate Banking"
   },
   {
     "rank": 73,
     "country": "Egypt",
-    "slug": "egypt-business-bank-account"
+    "slug": "egypt-business-bank-account",
+    "title": "Open a Business Bank Account in Egypt | Corporate Banking"
   },
   {
     "rank": 74,
     "country": "Nigeria",
-    "slug": "nigeria-business-bank-account"
+    "slug": "nigeria-business-bank-account",
+    "title": "Open a Nigeria Business Bank Account | Corporate Setup"
   },
   {
     "rank": 75,
     "country": "Kenya",
-    "slug": "kenya-business-bank-account"
+    "slug": "kenya-business-bank-account",
+    "title": "Open a Kenya Business Bank Account | Remote Setup"
   },
   {
     "rank": 76,
     "country": "Morocco",
-    "slug": "morocco-business-bank-account"
+    "slug": "morocco-business-bank-account",
+    "title": "Open a Morocco Business Bank Account | Non-Resident Banking"
   },
   {
     "rank": 77,
     "country": "Ghana",
-    "slug": "ghana-business-bank-account"
+    "slug": "ghana-business-bank-account",
+    "title": "Open a business bank account in Ghana | Setup guide"
   },
   {
     "rank": 78,
     "country": "Bangladesh",
-    "slug": "bangladesh-business-bank-account"
+    "slug": "bangladesh-business-bank-account",
+    "title": "Open a Business Bank Account in Bangladesh | Setup Support"
   },
   {
     "rank": 79,
     "country": "Pakistan",
-    "slug": "pakistan-business-bank-account"
+    "slug": "pakistan-business-bank-account",
+    "title": "Open a Business Bank Account in Pakistan | Corporate Guide"
   },
   {
     "rank": 80,
     "country": "Sri Lanka",
-    "slug": "sri-lanka-business-bank-account"
+    "slug": "sri-lanka-business-bank-account",
+    "title": "Open a Sri Lanka Business Bank Account | Corporate Setup"
   },
   {
     "rank": 81,
     "country": "Kazakhstan",
-    "slug": "kazakhstan-business-bank-account"
+    "slug": "kazakhstan-business-bank-account",
+    "title": "Open a Kazakhstan Business Bank Account | Corporate Banking"
   },
   {
     "rank": 82,
     "country": "Uzbekistan",
-    "slug": "uzbekistan-business-bank-account"
+    "slug": "uzbekistan-business-bank-account",
+    "title": "Open a Business Bank Account in Uzbekistan"
   },
   {
     "rank": 83,
     "country": "Georgia",
-    "slug": "georgia-business-bank-account"
+    "slug": "georgia-business-bank-account",
+    "title": "Open a Business Bank Account in Georgia"
   },
   {
     "rank": 84,
     "country": "Armenia",
-    "slug": "armenia-business-bank-account"
+    "slug": "armenia-business-bank-account",
+    "title": "Open a Business Bank Account in Armenia | Fast Setup"
   },
   {
     "rank": 85,
     "country": "Azerbaijan",
-    "slug": "azerbaijan-business-bank-account"
+    "slug": "azerbaijan-business-bank-account",
+    "title": "Open a Business Bank Account in Azerbaijan | Expert Setup"
   },
   {
     "rank": 86,
     "country": "Serbia",
-    "slug": "serbia-business-bank-account"
+    "slug": "serbia-business-bank-account",
+    "title": "Open a Business Bank Account in Serbia | Corporate Setup"
   },
   {
     "rank": 87,
     "country": "Bulgaria",
-    "slug": "bulgaria-business-bank-account"
+    "slug": "bulgaria-business-bank-account",
+    "title": "Open a Bulgarian Business Bank Account | B2B Corporate Desk"
   },
   {
     "rank": 88,
     "country": "Croatia",
-    "slug": "croatia-business-bank-account"
+    "slug": "croatia-business-bank-account",
+    "title": "Open a Business Bank Account in Croatia | Fast Corporate Setup"
   },
   {
     "rank": 89,
     "country": "Slovenia",
-    "slug": "slovenia-business-bank-account"
+    "slug": "slovenia-business-bank-account",
+    "title": "Open a Business Bank Account in Slovenia"
   },
   {
     "rank": 90,
     "country": "Slovakia",
-    "slug": "slovakia-business-bank-account"
+    "slug": "slovakia-business-bank-account",
+    "title": "Open a Business Bank Account in Slovakia | Non-Residents"
   },
   {
     "rank": 91,
     "country": "Uruguay",
-    "slug": "uruguay-business-bank-account"
+    "slug": "uruguay-business-bank-account",
+    "title": "Open a Business Bank Account in Uruguay | Corporate Banking"
   },
   {
     "rank": 92,
     "country": "Costa Rica",
-    "slug": "costa-rica-business-bank-account"
+    "slug": "costa-rica-business-bank-account",
+    "title": "Business Bank Account in Costa Rica | Corporate Setup"
   },
   {
     "rank": 93,
     "country": "Dominican Republic",
-    "slug": "dominican-republic-business-bank-account"
+    "slug": "dominican-republic-business-bank-account",
+    "title": "Business Bank Account in Dominican Republic | Fast Setup"
   },
   {
     "rank": 94,
     "country": "Jamaica",
-    "slug": "jamaica-business-bank-account"
+    "slug": "jamaica-business-bank-account",
+    "title": "Open a Jamaica Business Bank Account | Corporate Setup"
   },
   {
     "rank": 95,
     "country": "Trinidad and Tobago",
-    "slug": "trinidad-and-tobago-business-bank-account"
+    "slug": "trinidad-and-tobago-business-bank-account",
+    "title": "Open a Business Bank Account in Trinidad and Tobago"
   },
   {
     "rank": 96,
     "country": "Ecuador",
-    "slug": "ecuador-business-bank-account"
+    "slug": "ecuador-business-bank-account",
+    "title": "Open a Business Bank Account in Ecuador | Setup Guide"
   },
   {
     "rank": 97,
     "country": "Guatemala",
-    "slug": "guatemala-business-bank-account"
+    "slug": "guatemala-business-bank-account",
+    "title": "Open a Business Bank Account in Guatemala | Fast Setup"
   },
   {
     "rank": 98,
     "country": "El Salvador",
-    "slug": "el-salvador-business-bank-account"
+    "slug": "el-salvador-business-bank-account",
+    "title": "Open a Business Bank Account in El Salvador | B2B Setup"
   },
   {
     "rank": 99,
     "country": "Honduras",
-    "slug": "honduras-business-bank-account"
+    "slug": "honduras-business-bank-account",
+    "title": "Open a Business Bank Account in Honduras | Fast Setup"
   },
   {
     "rank": 100,
     "country": "Paraguay",
-    "slug": "paraguay-business-bank-account"
+    "slug": "paraguay-business-bank-account",
+    "title": "Open a Paraguay Business Bank Account | Expert Corporate Support"
   }
 ]

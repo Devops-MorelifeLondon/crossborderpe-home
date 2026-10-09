@@ -194,17 +194,17 @@ const Solutions = () => {
     },
     {
       title: "Business Banking Solutions",
-      description: "Complete banking solution with multi-currency accounts, business loans, and financial management.",
+      description: "Complete banking solution with multi-currency accounts, cash flow management, and global financial operations.",
       features: [
         "Multi-currency business accounts",
-        "Business credit lines up to $500K",
+        "High-volume global settlement limits",
         "Automated bookkeeping integration",
         "Business expense management",
         "Dedicated relationship manager"
       ],
       benefits: {
         cash_flow: "Improved cash flow",
-        credit: "Access to business credit",
+        treasury: "Global treasury control",
         support: "Dedicated support"
       },
       icon: Building,
@@ -331,13 +331,13 @@ const Solutions = () => {
 
   const exportersSolutions = [
     {
-      title: "Export Trade Finance",
-      description: "Comprehensive trade finance solutions including letters of credit, export financing, and risk mitigation.",
+      title: "Export Trade Settlement",
+      description: "Comprehensive trade payment solutions including letters of credit, export settlement, and currency risk mitigation.",
       features: [
         "Letters of credit and documentary collections",
-        "Export financing and working capital loans",
+        "Export receivables and cross-border settlement",
         "Political and commercial risk insurance",
-        "Supply chain financing for suppliers",
+        "Supply chain settlement for global suppliers",
         "Trade document digitization and management"
       ],
       benefits: {
@@ -346,7 +346,7 @@ const Solutions = () => {
         efficiency: "Streamlined trade processes"
       },
       icon: Ship,
-      cta: "Access Trade Finance"
+      cta: "Explore Trade Solutions"
     },
     {
       title: "Export Payment Solutions",
