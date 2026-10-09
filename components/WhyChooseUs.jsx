@@ -44,13 +44,6 @@ const WhyChooseUs = () => {
     }
   ];
 
-  const stats = [
-    { value: "₹50,000+", label: "Average Annual Savings", icon: DollarSign },
-    { value: "99.8%", label: "Transaction Success Rate", icon: CheckCircle },
-    { value: "2 Hours", label: "Fastest Settlement Time", icon: Clock },
-    { value: "25", label: "Supported Currencies", icon: Globe }
-  ];
-
   return (
     <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,7 +165,7 @@ const WhyChooseUs = () => {
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Experience the CrossborderPe Advantage</h3>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Join 50,000+ businesses who have already discovered the power of modern international payments. 
+              Join forward-thinking businesses who have discovered the power of seamless international banking and payments. 
               Start saving time and money today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">

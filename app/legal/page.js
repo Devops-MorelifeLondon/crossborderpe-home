@@ -3,7 +3,8 @@
 import React from 'react';
 import { ShieldCheck, FileText, Lock, CheckCircle, Globe, ScrollText } from 'lucide-react';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://crossborderpe-home.vercel.app";
 
 export const metadata = {
   title: "Legal, Privacy & Compliance | CrossborderPe",

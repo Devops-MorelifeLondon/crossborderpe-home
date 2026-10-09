@@ -76,12 +76,12 @@ const Contact = () => {
     {
       icon: Shield,
       title: "Bank-Grade Security",
-      description: "PCI DSS Level 1 and SOC 2 Type II certified"
+      description: "PCI DSS Level 1 certified"
     },
     {
       icon: Zap,
       title: "Fast Processing",
-      description: "Real-time payments with 99.99% uptime"
+      description: "Real-time payments with automated clearing rails"
     },
     {
       icon: Award,
@@ -121,7 +121,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full text-sm font-semibold text-blue-800 mb-8 border border-blue-100">
             <Shield className="w-4 h-4 mr-2 text-blue-600" />
-            Trusted by 50,000+ businesses worldwide
+            Enterprise-Grade Cross-Border Solutions
           </div>
           <h1 className="text-5xl sm:text-6xl font-bold text-slate-900 mb-6 leading-tight">
             Get Started with
@@ -259,20 +259,20 @@ const Contact = () => {
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">$25B+</div>
-                  <div className="text-sm text-slate-600">Annual Volume</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">25+</div>
+                  <div className="text-sm text-slate-600">Currencies</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">50K+</div>
-                  <div className="text-sm text-slate-600">Active Businesses</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">200+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">150+</div>
                   <div className="text-sm text-slate-600">Countries</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">99.99%</div>
-                  <div className="text-sm text-slate-600">Uptime</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">Fast</div>
+                  <div className="text-sm text-slate-600">Settlements</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">Dedicated</div>
+                  <div className="text-sm text-slate-600">Account Support</div>
                 </div>
               </div>
 

@@ -431,8 +431,8 @@ const Solutions = () => {
       type: "Exporter",
       name: "Global Textiles Ltd.",
       location: "Textile Exporter",
-      story: "Improved cash flow by 40% with trade finance",
-      savings: "$50K saved on banking fees annually"
+      story: "Improved cash flow with structured trade finance",
+      savings: "Significant reduction in banking fees annually"
     }
   ];
 

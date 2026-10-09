@@ -27,7 +27,7 @@ const Security = () => {
 
   const certifications = [
     "PCI DSS Level 1",
-    "SOC 2 Type II",
+    "AML / KYC Compliant",
     "ISO 27001",
     "GDPR Compliant",
     "SOX Compliant",

@@ -129,9 +129,7 @@ const WorldClockTicker = () => {
                     <span className="text-3xl text-gray-600">{zone.flag}</span>
                     <div className={`w-3 h-3 rounded-full ${businessHours ? 'bg-green-500' : 'bg-slate-400'}`}></div>
                   </div>
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${officeInfo.color}`}>
-                    {officeInfo.label}
-                  </span>
+     
                 </div>
                 
                 {/* Time Display with Hydration Fix */}

@@ -31,7 +31,7 @@ const trustIndicators = [
   "RBI Regulated Entity",
   "FEMA Compliant Operations",
   "ISO 27001 Certified",
-  "SOC 2 Type II Audited",
+  "AML & KYC Compliant Operations",
   "Regular Regulatory Audits"
 ];
 

@@ -1168,15 +1168,14 @@ export default function UKBusinessBankAccount() {
 
             <div className="max-w-2xl mx-auto space-y-4 text-slate-600 text-base sm:text-lg font-normal leading-relaxed">
               <p>
-                Our fees are fixed and agreed before we start. Pricing starts
-                from <strong className="font-semibold text-slate-900">£[X]</strong>{" "}
-                for the preparation and application management service, with the
-                final fee depending on your company structure, residency and
-                number of directors or owners.
+                Our fees are fixed, transparent, and agreed before we start. Pricing
+                for the preparation and application management service is tailored
+                to your company structure, residency status, and the number of
+                directors or owners.
               </p>
               <p className="text-sm text-slate-500">
-                We'll confirm the exact cost after your free eligibility check, so
-                there are no hidden charges. Bank or provider fees are separate
+                We'll confirm the exact fixed cost after your free eligibility check,
+                so there are no hidden charges. Bank or provider fees are separate
                 and set by the institution.
               </p>
             </div>
@@ -1427,7 +1426,7 @@ export default function UKBusinessBankAccount() {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      placeholder="e.g. Alex Morgan"
+                      placeholder="Your full name"
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-sm font-normal"
                     />
                   </div>
@@ -1442,7 +1441,7 @@ export default function UKBusinessBankAccount() {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="e.g. alex@example.com"
+                      placeholder="name@company.com"
                       className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white text-slate-900 text-sm font-normal"
                     />
                   </div>

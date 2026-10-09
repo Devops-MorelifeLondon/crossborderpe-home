@@ -17,8 +17,8 @@ const TrustBadges = () => {
               <div className="bg-blue-100 rounded-full p-3 w-fit mx-auto mb-4">
                 <Shield className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-2xl font-bold text-black mb-2">99.99%</div>
-              <div className="text-sm text-gray-600">Uptime Guarantee</div>
+              <div className="text-2xl font-bold text-black mb-2">Fast</div>
+              <div className="text-sm text-gray-600">Settlement Speed</div>
             </div>
           </div>
           <div className="text-center">
@@ -26,8 +26,8 @@ const TrustBadges = () => {
               <div className="bg-blue-100 rounded-full p-3 w-fit mx-auto mb-4">
                 <Award className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-2xl font-bold text-black mb-2">SOC 2</div>
-              <div className="text-sm text-gray-600">Type II Certified</div>
+              <div className="text-2xl font-bold text-black mb-2">Tier-1</div>
+              <div className="text-sm text-gray-600">Banking Partners</div>
             </div>
           </div>
           <div className="text-center">

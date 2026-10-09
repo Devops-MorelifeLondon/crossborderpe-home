@@ -987,7 +987,7 @@ const Resources = () => {
             </div>
             <h3 className="text-4xl font-bold text-white mb-6">Stay Ahead of Payment Innovation</h3>
             <p className="text-2xl text-slate-300 mb-10 leading-relaxed">
-              Join 50,000+ finance professionals who rely on our expert research and insights 
+              Join finance professionals who rely on our expert research and insights 
               to drive their cross-border payment strategies and global expansion initiatives.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-6 sm:space-y-0 sm:space-x-6 max-w-2xl mx-auto">
@@ -1004,7 +1004,7 @@ const Resources = () => {
             <div className="flex items-center justify-center space-x-8 mt-10 text-slate-400">
               <div className="flex items-center space-x-2">
                 <Users className="w-5 h-5" />
-                <span>50,000+ subscribers</span>
+                <span>Expert Community</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Globe className="w-5 h-5" />

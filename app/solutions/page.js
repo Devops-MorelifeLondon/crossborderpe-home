@@ -1,7 +1,8 @@
 import React from 'react'
 import SolutionsPage from './solution';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://crossborderpe-home.vercel.app";
 
 export const metadata = {
   title: "Best Cross-Border Payment Solutions for Individuals & Businesses | CrossborderPe",
