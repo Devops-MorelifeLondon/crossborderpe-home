@@ -52,10 +52,10 @@ const contactMethods = [
 ];
 
 const companyStats = [
-  { value: "$25B+", label: "Annual Volume" },
-  { value: "50K+", label: "Active Businesses" },
-  { value: "200+", label: "Countries" },
-  { value: "99.99%", label: "Uptime" },
+  { value: "25+", label: "Currencies" },
+  { value: "150+", label: "Countries" },
+  { value: "Fast", label: "Settlement" },
+  { value: "Dedicated", label: "Support" },
 ];
 
 const officeLocations = [

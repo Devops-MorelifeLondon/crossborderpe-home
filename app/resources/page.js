@@ -1,7 +1,8 @@
 import React from 'react'
 import Resources from './resources';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://crossborderpe-home.vercel.app";
 
 export const metadata = {
   title: "Cross-Border Payment Intelligence Center | Research, Insights & Webinars",

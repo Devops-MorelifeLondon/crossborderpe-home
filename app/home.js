@@ -6,7 +6,6 @@ import Hero from '@/components/Hero';
 import TrustBadges from '@/components/TrustBadges';
 import Services from '@/components/Services';
 import WhyChooseUs from '@/components/WhyChooseUs';
-import Stats from '@/components/Stats';
 import Slider from '@/components/Slider';
 import VideoSection from '@/components/VideoSection';
 
@@ -26,17 +25,14 @@ const Home = () => (
 
     <main className='w-full'>
       {/* Above the fold */}
-      <Hero />
-      <Slider />
+      <Hero /> 
    
       <TrustBadges />
-      <VideoSection />
       <Services />
        <Suspense fallback={<div>Loading regulatory info...</div>}>
         <RegulatoryCompliance />
       </Suspense>
       <WhyChooseUs /> 
-     <Stats />
 
       {/* Below the fold (lazy-loaded sections) */}
      
@@ -48,12 +44,7 @@ const Home = () => (
       </Suspense>
       
         <WorldClock />
-     
-     
-      <Suspense fallback={<div>Loading testimonials...</div>}>
-        <Testimonials />
-      </Suspense>
-     
+
     </main>
   </>
 );

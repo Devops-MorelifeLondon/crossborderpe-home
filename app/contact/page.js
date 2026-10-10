@@ -1,6 +1,7 @@
 import React from 'react'
 import Contact from './contact'
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://crossborderpe-home.vercel.app";
 
 export const metadata = {
   title: "Contact Us | CrossborderPe - Global Cross-Border Payments",

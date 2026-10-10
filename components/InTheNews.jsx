@@ -33,10 +33,10 @@ const InTheNews = () => {
     {
       outlet: 'Financial Express',
       logo: 'FE',
-      headline: 'CrossborderPe Processes $25B+ in Annual Transaction Volume',
+      headline: 'CrossborderPe Expands Business Bank Account Solutions Globally',
       date: 'December 15, 2024',
       category: 'Milestone',
-      excerpt: 'Company reaches significant milestone serving 50,000+ businesses with transparent pricing and fast settlements.'
+      excerpt: 'Company expands international corporate banking facilitation with transparent pricing and fast settlements.'
     },
     {
       outlet: 'Mint',

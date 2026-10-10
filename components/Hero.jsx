@@ -54,7 +54,7 @@ const Hero = () => {
                 <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center shrink-0">
                   <CheckCircle className="w-4 h-4 text-green-600" />
                 </div>
-                <span className="text-slate-700 font-medium text-sm sm:text-base">99.99% Uptime</span>
+                <span className="text-slate-700 font-medium text-sm sm:text-base">Fast Settlements</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center shrink-0">

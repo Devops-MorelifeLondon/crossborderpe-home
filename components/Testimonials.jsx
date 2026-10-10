@@ -85,29 +85,6 @@ const Testimonials = () => {
     }
   ];
 
-  const businessMetrics = [
-    {
-      icon: DollarSign,
-      value: "$25B+",
-      label: "Annual Transaction Volume"
-    },
-    {
-      icon: Building2,
-      value: "50,000+",
-      label: "Active Businesses"
-    },
-    {
-      icon: Globe2,
-      value: "200+",
-      label: "Countries Supported"
-    },
-    {
-      icon: TrendingUp,
-      value: "99.98%",
-      label: "Success Rate"
-    }
-  ];
-
   return (
     <section className="py-6 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

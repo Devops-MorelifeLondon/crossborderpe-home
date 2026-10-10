@@ -3,34 +3,24 @@ import React from 'react';
 const Stats = () => {
   const stats = [
     {
-      number: "$25B+",
-      label: "Cross-Border Volume",
-      description: "Annual international payments"
+      number: "25+",
+      label: "Currencies Supported",
+      description: "Seamless global currency accounts"
     },
     {
-      number: "50K+",
-      label: "Businesses Trust Us",
-      description: "From SMEs to multinational corporations"
-    },
-    {
-      number: "200+",
+      number: "150+",
       label: "Countries Supported",
       description: "Worldwide payment network"
     },
     {
-      number: "99.99%",
-      label: "System Uptime",
-      description: "Guaranteed availability"
+      number: "Fast",
+      label: "Settlement Rails",
+      description: "Direct bank-to-bank settlements"
     },
     {
-      number: "25+",
-      label: "Currencies Supported",
-      description: "Lightning-fast processing"
-    },
-    {
-      number: "24/7",
-      label: "Expert Support",
-      description: "Always here when you need us"
+      number: "Dedicated",
+      label: "Account Support",
+      description: "Specialized enterprise guidance"
     }
   ];
 

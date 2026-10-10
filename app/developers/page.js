@@ -2,7 +2,8 @@ import React from 'react'
 import Developers from './developers';
 
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://defaultdomain.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || "https://crossborderpe-home.vercel.app";
 
 export const metadata = {
   title: "Developer API Docs & SDKs | CrossborderPe",

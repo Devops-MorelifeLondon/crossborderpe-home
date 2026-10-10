@@ -79,7 +79,7 @@ console.log('Payment created:', payment.id);`;
     {
       icon: Zap,
       title: "Lightning Fast",
-      description: "Sub-second response times with 99.99% uptime guarantee"
+      description: "Sub-second response times with robust high availability architecture"
     },
     {
       icon: Globe,
@@ -98,42 +98,42 @@ console.log('Payment created:', payment.id);`;
       name: "Node.js",
       description: "Official Node.js SDK with TypeScript support",
       version: "v2.1.0",
-      downloads: "50K+",
+      status: "Stable",
       language: "JavaScript/TypeScript"
     },
     {
       name: "Python",
       description: "Python SDK with async/await support",
       version: "v1.8.0",
-      downloads: "35K+",
+      status: "Stable",
       language: "Python"
     },
     {
       name: "PHP",
       description: "PHP SDK compatible with Laravel and Symfony",
       version: "v1.5.0",
-      downloads: "28K+",
+      status: "Stable",
       language: "PHP"
     },
     {
       name: "Java",
       description: "Java SDK for Spring Boot applications",
       version: "v1.3.0",
-      downloads: "22K+",
+      status: "Stable",
       language: "Java"
     },
     {
       name: "Ruby",
       description: "Ruby gem for Rails applications",
       version: "v1.2.0",
-      downloads: "18K+",
+      status: "Stable",
       language: "Ruby"
     },
     {
       name: "Go",
       description: "Go module for high-performance applications",
       version: "v1.1.0",
-      downloads: "15K+",
+      status: "Stable",
       language: "Go"
     }
   ];
@@ -238,21 +238,21 @@ console.log('Payment created:', payment.id);`;
               </pre>
             </div>
 
-            {/* Stats */}
+            {/* Developer Highlights */}
             <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-12 text-center">
-              <h3 className="text-3xl font-bold text-white mb-8">Trusted by Developers Worldwide</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">Built for Modern Development Teams</h3>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                  <div className="text-4xl font-bold text-blue-400 mb-2">10K+</div>
-                  <div className="text-slate-300">Active Developers</div>
+                  <div className="text-4xl font-bold text-blue-400 mb-2">&lt; 100ms</div>
+                  <div className="text-slate-300">Average API Latency</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-blue-400 mb-2">500M+</div>
-                  <div className="text-slate-300">API Calls/Month</div>
+                  <div className="text-4xl font-bold text-blue-400 mb-2">Webhooks</div>
+                  <div className="text-slate-300">Real-Time Event Rails</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-blue-400 mb-2">99.99%</div>
-                  <div className="text-slate-300">API Uptime</div>
+                  <div className="text-4xl font-bold text-blue-400 mb-2">Sandbox</div>
+                  <div className="text-slate-300">Instant Test Environment</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-blue-400 mb-2">24/7</div>
@@ -392,8 +392,8 @@ console.log('Payment created:', payment.id);`;
                       <span className="font-medium text-slate-700">{sdk.language}</span>
                     </div>
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-slate-500">Downloads</span>
-                      <span className="font-medium text-slate-700">{sdk.downloads}</span>
+                      <span className="text-slate-500">Status</span>
+                      <span className="font-medium text-emerald-600">{sdk.status}</span>
                     </div>
                   </div>
                   <div className="flex space-x-3">

@@ -39,21 +39,22 @@ export const metadata = {
   alternates: {
     canonical: baseUrl,
   },
-  themeColor: "#0667e2",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",
     apple: "/apple-touch-icon.png",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   robots: {
     index: true,
     follow: true,
   },
+};
+
+export const viewport = {
+  themeColor: "#0667e2",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 const Page = () => {
