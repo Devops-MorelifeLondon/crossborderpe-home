@@ -11,19 +11,20 @@ export async function POST(req) {
       return NextResponse.json({ error: "All fields are required." }, { status: 400 });
 
     // ✅ Verify reCAPTCHA
-    // ... your reCAPTCHA code is perfect, no changes needed ...
     const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY;
-    const captchaVerify = await fetch(`https://www.google.com/recaptcha/api/siteverify`, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        secret: recaptchaSecret,
-        response: captcha,
-      }),
-    }).then((r) => r.json());
+    if (recaptchaSecret) {
+      const captchaVerify = await fetch(`https://www.google.com/recaptcha/api/siteverify`, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          secret: recaptchaSecret,
+          response: captcha,
+        }),
+      }).then((r) => r.json());
 
-    if (!captchaVerify.success)
-      return NextResponse.json({ error: "Failed CAPTCHA verification." }, { status: 400 });
+      if (!captchaVerify.success)
+        return NextResponse.json({ error: "Failed CAPTCHA verification." }, { status: 400 });
+    }
 
     // 🧾 JotForm Integration
     const formId = process.env.JOTFORM_SERVICE_PAGE_FORM_ID;

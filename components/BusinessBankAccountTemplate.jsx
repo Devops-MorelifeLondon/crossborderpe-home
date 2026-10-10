@@ -28,16 +28,11 @@ import {
   Compass,
   ArrowUpRight,
 } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export default function BusinessBankAccountTemplate({ countryData }) {
   const [openFaq, setOpenFaq] = useState(null);
   const [faqSearch, setFaqSearch] = useState("");
-
-  // Dynamic form state
-  const [formState, setFormState] = useState({});
-  const [formLoading, setFormLoading] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formError, setFormError] = useState("");
 
   if (!countryData) {
     return (
@@ -78,44 +73,11 @@ export default function BusinessBankAccountTemplate({ countryData }) {
   };
 
   const scrollToForm = () => {
-    const el = document.getElementById("lead-capture-section");
+    const el = document.getElementById("hero-contact-form") || document.getElementById("inquiry-form");
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormState((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
-    setFormLoading(true);
-    setFormError("");
-
-    try {
-      const payload = {
-        country,
-        ...formState,
-      };
-
-      const res = await fetch("/api/eligibility", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      if (res.ok) {
-        setFormSubmitted(true);
-      } else {
-        const errorData = await res.json().catch(() => ({}));
-        setFormError(errorData.error || "Failed to submit. Please try again.");
-      }
-    } catch (err) {
-      setFormSubmitted(true);
-    } finally {
-      setFormLoading(false);
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      const firstInput = el.querySelector("input");
+      if (firstInput) firstInput.focus();
     }
   };
 
@@ -222,115 +184,9 @@ export default function BusinessBankAccountTemplate({ countryData }) {
               )}
             </div>
 
-            {/* Right Column: Hero Quick Eligibility Card */}
-            <div className="lg:col-span-5">
-              <div className="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200/90 shadow-[0_10px_35px_rgba(0,0,0,0.06)] relative">
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100">
-                    <ShieldCheck className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="text-base font-medium text-slate-900">Pre-Assessment Eligibility</h3>
-                    <p className="text-xs text-slate-500 font-normal">Free compliance review for {country}</p>
-                  </div>
-                </div>
-
-                {formSubmitted ? (
-                  <div className="text-center py-10 space-y-3">
-                    <CheckCircle className="w-12 h-12 text-emerald-600 mx-auto" />
-                    <h4 className="text-lg font-medium text-slate-900">Inquiry Received</h4>
-                    <p className="text-xs sm:text-sm text-slate-600 font-normal">
-                      Our corporate banking onboarding desk will review your details and contact you within 24 business hours.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleFormSubmit} className="space-y-4">
-                    {formError && (
-                      <div className="p-3 rounded-lg bg-rose-50 border border-rose-200 text-rose-700 text-xs font-normal">
-                        {formError}
-                      </div>
-                    )}
-
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">
-                        Full Name <span className="text-rose-500">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        name="fullName"
-                        required
-                        placeholder="e.g. Michael Smith"
-                        onChange={handleInputChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">
-                        Corporate Email <span className="text-rose-500">*</span>
-                      </label>
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        placeholder="founder@company.com"
-                        onChange={handleInputChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">
-                        Country of Residence <span className="text-rose-500">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        name="countryOfResidence"
-                        required
-                        placeholder="Your country of tax residence"
-                        onChange={handleInputChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-medium text-slate-600 mb-1">
-                        Do you have a registered company in {country}?
-                      </label>
-                      <select
-                        name="hasCompany"
-                        onChange={handleInputChange}
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                      >
-                        <option value="Yes">Yes, registered entity exists</option>
-                        <option value="No">No, require company setup first</option>
-                        <option value="In Progress">Registration currently in progress</option>
-                      </select>
-                    </div>
-
-                    <button
-                      type="submit"
-                      disabled={formLoading}
-                      className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 mt-2"
-                    >
-                      {formLoading ? (
-                        <>
-                          <Loader2 className="w-4 h-4 animate-spin" />
-                          <span>Verifying Profile...</span>
-                        </>
-                      ) : (
-                        <>
-                          <span>Check My Eligibility (Free)</span>
-                          <ArrowRight className="w-4 h-4" />
-                        </>
-                      )}
-                    </button>
-                    <p className="text-[11px] text-slate-400 text-center pt-1 font-normal">
-                      Zero approval guarantees: 100% compliant execution.
-                    </p>
-                  </form>
-                )}
-              </div>
+            {/* Right Column: Hero Contact Form (Same as Contact Page) */}
+            <div id="hero-contact-form" className="lg:col-span-5">
+              <ContactForm country={country} formId="inquiry-form" />
             </div>
           </div>
         </div>
@@ -829,173 +685,6 @@ export default function BusinessBankAccountTemplate({ countryData }) {
         </section>
       )}
 
-      {/* =========================================================================
-          10. BOTTOM LEAD CAPTURE FORM SECTION (LIGHT EXECUTIVE THEME)
-      ========================================================================== */}
-      <section id="lead-capture-section" className="py-20 bg-white border-b border-slate-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="text-xs font-medium uppercase tracking-wider text-blue-600 mb-2 block">
-              Application Initiation
-            </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-slate-900 tracking-tight">
-              {leadForm.title}
-            </h2>
-            <p className="mt-3 text-sm text-slate-600 max-w-2xl mx-auto font-light sm:font-normal">
-              {leadForm.description}
-            </p>
-          </div>
-
-          <div className="bg-slate-50/70 rounded-2xl p-8 sm:p-10 border border-slate-200 shadow-sm">
-            {formSubmitted ? (
-              <div className="text-center py-12 space-y-4">
-                <CheckCircle className="w-16 h-16 text-emerald-600 mx-auto" />
-                <h3 className="text-xl font-medium text-slate-900">Application Received</h3>
-                <p className="text-sm text-slate-600 max-w-md mx-auto font-normal">
-                  Thank you. Our compliance team will audit your company profile and respond with verified banking routes within 24 business hours.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleFormSubmit} className="space-y-6">
-                {formError && (
-                  <div className="p-4 rounded-lg bg-rose-50 border border-rose-200 text-rose-700 text-xs font-normal">
-                    {formError}
-                  </div>
-                )}
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                      Full Name <span className="text-rose-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="fullName"
-                      required
-                      placeholder="Jane Doe"
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 rounded-lg bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                      Corporate Email Address <span className="text-rose-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      placeholder="founder@company.com"
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 rounded-lg bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                      Country of Residence <span className="text-rose-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="countryOfResidence"
-                      required
-                      placeholder="e.g. United Kingdom, Singapore, Germany"
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 rounded-lg bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                      Do you have a registered company in {country}? <span className="text-rose-500">*</span>
-                    </label>
-                    <select
-                      name="hasCompany"
-                      required
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 rounded-lg bg-white border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                    >
-                      <option value="Yes">Yes, registered entity exists</option>
-                      <option value="No">No, need incorporation assistance</option>
-                      <option value="Pending">Registration in progress</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                      Primary Business Activity
-                    </label>
-                    <select
-                      name="businessType"
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 rounded-lg bg-white border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                    >
-                      <option value="Software / SaaS">Software / SaaS / Technology</option>
-                      <option value="E-Commerce / Retail">E-Commerce / Amazon / Shopify</option>
-                      <option value="Consulting / Professional Services">Consulting / Agency / Services</option>
-                      <option value="Trading / Import & Export">Trading / Import & Export</option>
-                      <option value="Holding Company / Investments">Holding Company / Investments</option>
-                      <option value="Other Commercial Activities">Other Commercial Activities</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                      Expected Monthly Turnover
-                    </label>
-                    <select
-                      name="monthlyTurnover"
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-2.5 rounded-lg bg-white border border-slate-200 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                    >
-                      <option value="Under $25,000">Under $25,000 / month</option>
-                      <option value="$25,000 - $100,000">$25,000 - $100,000 / month</option>
-                      <option value="$100,000 - $500,000">$100,000 - $500,000 / month</option>
-                      <option value="Over $500,000">Over $500,000 / month</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-medium text-slate-600 mb-1.5">
-                    Optional Message or Specific Provider Preferences
-                  </label>
-                  <textarea
-                    name="message"
-                    rows={3}
-                    placeholder="Provide details regarding target financial institutions, entity type, or cross-border payment requirements..."
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 rounded-lg bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-600 transition font-normal"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={formLoading}
-                  className="w-full py-3.5 px-6 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm sm:text-base shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
-                >
-                  {formLoading ? (
-                    <>
-                      <Loader2 className="w-5 h-5 animate-spin" />
-                      <span>Submitting Eligibility Request...</span>
-                    </>
-                  ) : (
-                    <>
-                      <span>{leadForm.submitButtonText || "Check My Eligibility (Free)"}</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </>
-                  )}
-                </button>
-              </form>
-            )}
-          </div>
-        </div>
-      </section>
 
       {/* =========================================================================
           11. REGULATORY & LEGAL DISCLAIMER (LIGHT PALETTE)
