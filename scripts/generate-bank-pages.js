@@ -6,6 +6,7 @@ import {
   getAllCountryBankAccounts,
   getSlugForCountry,
 } from "../lib/bank-accounts-data.js";
+import { generateSitemap } from "./generate-sitemap.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -142,6 +143,10 @@ function run() {
   console.log(`\n✅ Generated Manifest: ${manifestFile}`);
   console.log(`📁 Total Directories Created: ${createdCount}`);
   console.log(`🎉 Successfully generated ${generatedSlugs.length} business bank account pages!`);
+
+  // Step 4: Update sitemap
+  console.log(`\n🗺️ Updating sitemap.xml...`);
+  generateSitemap();
   console.log("=================================================\n");
 }
 
