@@ -39,8 +39,8 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <Image height={100} width={200} src="/Crossborderpe_colored.png" className="w-40 mb-2" alt="CrossBorderPe Logo" />
-            <p className="text-gray-600 mb-6 max-w-md">
-              Leading cross-border payment solutions provider for seamless international transactions.
+            <p className="text-gray-600 mb-6 max-w-md text-sm leading-relaxed">
+              Global cross-border payments infrastructure and multi-currency accounts. Collect international payments in 25+ currencies with local virtual accounts, fast global settlements, and automated compliance.
             </p>
             <div className="space-y-3">
               <a href="mailto:info@crossborderpe.com" className="flex items-center space-x-3 group">
@@ -70,8 +70,15 @@ const Footer = () => {
           ))}
         </div>
 
+        {/* Compliance Disclaimer */}
+        <div className="pt-6 pb-6 border-t border-gray-100 text-xs text-gray-500 leading-relaxed">
+          <p>
+            <strong className="text-gray-700 font-semibold">Regulatory Disclaimer:</strong> CrossborderPe is a financial technology platform, not a bank. Cross-border payment infrastructure, virtual collection accounts, and foreign currency conversion are facilitated in partnership with tier-1 regulated banking partners and authorized financial institutions. All transactions are executed in strict compliance with applicable foreign exchange regulations and local statutory standards.
+          </p>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-700 text-sm">
             © {currentYear} CrossborderPe. All rights reserved.
           </div>

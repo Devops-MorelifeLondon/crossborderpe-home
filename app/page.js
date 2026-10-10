@@ -6,15 +6,15 @@ const baseUrl =
   process.env.NEXT_PUBLIC_BASE_URL || "https://crossborderpe-home.vercel.app";
 
 export const metadata = {
-  title: "CrossborderPe – Cross-Border Payments & Global Finance Solutions",
+  title: "CrossborderPe – Global Cross-Border Payments & Multi-Currency Accounts",
   description:
-    "Manage international payments, multi-currency accounts, and global business operations with secure, transparent, and fully compliant cross-border solutions.",
+    "Collect, convert, and manage international payments in 25+ currencies with local virtual accounts in the US, UK, EU, Canada, and beyond. Fast global settlements and automated compliance.",
   keywords:
-    "cross-border payments, multi-currency account, trade finance, international payments, API payment integration, FX rates, global banking, regulatory compliance, global finance solutions, remittance platform, fintech solutions",
+    "cross-border payments, multi-currency accounts, virtual collection accounts, global payments, international wire, FX rates, exporter payments, global remittance platform",
   openGraph: {
-    title: "CrossborderPe – International Payments & Trade Finance",
+    title: "CrossborderPe – Global Cross-Border Payments & Multi-Currency Accounts",
     description:
-      "Everything you need for global payments, FX, and trade finance. Licensed, secure, and trusted by millions.",
+      "Collect global payments in 25+ currencies with local collection accounts, fast settlements, and automated compliance.",
     url: baseUrl,
     type: "website",
     locale: "en_IN",
@@ -24,15 +24,15 @@ export const metadata = {
         url: `${baseUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "CrossborderPe – Global Finance Solutions",
+        alt: "CrossborderPe – Global Payments Infrastructure",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CrossborderPe – Cross-Border Payments & Finance",
+    title: "CrossborderPe – Global Cross-Border Payments & Multi-Currency Accounts",
     description:
-      "Global payment and finance solutions for individuals and businesses with compliance, transparency, and speed.",
+      "Collect global payments with local collection accounts, fast settlements, and automated compliance.",
     images: [`${baseUrl}/og-image.jpg`],
     creator: "@crossborderpe",
   },

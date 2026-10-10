@@ -13,9 +13,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "CrossborderPe – Cross-Border Payments & Global Finance Solutions",
+  title: "CrossborderPe – Global Cross-Border Payments & Multi-Currency Accounts",
   description:
-    "Manage international payments, multi-currency accounts, and global business operations with secure, transparent, and fully compliant cross-border solutions.",
+    "Collect, convert, and manage international payments in 25+ currencies with local virtual accounts in the US, UK, EU, Canada, and beyond. Fast global settlements and automated compliance.",
 };
 
 export default function RootLayout({ children }) {

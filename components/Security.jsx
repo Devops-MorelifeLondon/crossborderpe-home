@@ -1,84 +1,90 @@
 import React from 'react';
-import { Shield, Lock, Eye, CheckCircle, Award } from 'lucide-react';
+import { Shield, Lock, Eye, CheckCircle, ShieldCheck } from 'lucide-react';
 
 const Security = () => {
   const securityFeatures = [
     {
-      icon: Shield,
-      title: "PCI DSS Level 1 Compliance",
-      description: "Highest level of payment security certification ensuring your data is protected at all times."
+      icon: Lock,
+      title: "256-Bit AES & TLS 1.3 Encryption",
+      description: "End-to-end cryptographic encryption protects financial data in transit and sensitive account details at rest."
     },
     {
-      icon: Lock,
-      title: "End-to-End Encryption",
-      description: "Military-grade encryption protects sensitive data throughout the entire payment process."
+      icon: Shield,
+      title: "Segregated Escrow Safeguards",
+      description: "Client inward funds are held in segregated accounts at regulated partner banking institutions, never co-mingled."
     },
     {
       icon: Eye,
-      title: "Real-Time Fraud Detection",
-      description: "Advanced machine learning algorithms detect and prevent fraudulent transactions instantly."
+      title: "Automated Fraud & AML Monitoring",
+      description: "Continuous algorithmic surveillance and real-time international sanctions screening against global databases."
     },
     {
       icon: CheckCircle,
-      title: "Multi-Factor Authentication",
-      description: "Secure access controls with biometric and hardware-based authentication options."
+      title: "Multi-Factor Access Controls",
+      description: "Enterprise-grade identity verification with TOTP multi-factor authentication and role-based permissions."
     }
   ];
 
-  const certifications = [
-    "PCI DSS Level 1",
-    "AML / KYC Compliant",
-    "ISO 27001",
-    "GDPR Compliant",
-    "SOX Compliant",
-    "CCPA Compliant"
+  const securityPillars = [
+    "256-Bit AES Encryption",
+    "SOC 2 Aligned Infrastructure",
+    "TLS 1.3 Transport Security",
+    "FEMA & PMLA Compliant",
+    "Segregated Escrow Accounts",
+    "Continuous Threat Monitoring"
   ];
 
   return (
-    <section className="py-10 bg-gray-50">
+    <section className="py-16 bg-slate-50 border-t border-slate-200/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-      
-            <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full text-sm font-semibold text-blue-800 mb-8 border border-blue-100">
-                      <Award className="w-5 h-5 mr-2 text-blue-600" />
-                 Enterprise-Grade Security
-                    </div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your security is our priority. We maintain the highest security standards to protect your business and customers.
+          <div className="inline-flex items-center px-5 py-2 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full text-xs sm:text-sm font-semibold text-blue-800 mb-6 border border-blue-100 shadow-xs">
+            <ShieldCheck className="w-4 h-4 mr-2 text-blue-600" />
+            Bank-Grade Infrastructure & Data Protection
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
+            Security at Every Layer of the Payment Lifecycle
+          </h2>
+          <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Powered by enterprise-grade banking infrastructure, your financial transactions, business credentials, and cross-border records are protected by industry-standard security protocols.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {securityFeatures.map((feature, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg p-3 w-fit mx-auto mb-4 shadow-lg">
-                <feature.icon className="w-6 h-6 text-white" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16">
+          {securityFeatures.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-6 sm:p-8 text-center border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl p-3 w-fit mx-auto mb-4 shadow-md">
+                  <Icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">{feature.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{feature.description}</p>
               </div>
-              <h3 className="text-lg font-semibold text-black mb-3">{feature.title}</h3>
-              <p className="text-gray-600 text-sm">{feature.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        <div className="bg-white rounded-2xl p-8 shadow-sm">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-black mb-4">Security Certifications</h3>
-            <p className="text-gray-600">We maintain the industry's most stringent security certifications</p>
+        <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/80">
+          <div className="text-center mb-6">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Security & Governance Architecture</h3>
+            <p className="text-slate-600 text-sm">Engineered to meet the stringent standards of modern cross-border financial technology</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {certifications.map((cert, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-4 text-center">
-                <div className="text-sm font-semibold text-black">{cert}</div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            {securityPillars.map((cert, index) => (
+              <div key={index} className="bg-slate-50 border border-slate-200/70 rounded-xl p-3.5 text-center">
+                <div className="text-xs sm:text-sm font-semibold text-slate-800">{cert}</div>
               </div>
             ))}
           </div>
         </div>
-
-      
       </div>
     </section>
   );
 };
 
-export default Security;
+export default Security;

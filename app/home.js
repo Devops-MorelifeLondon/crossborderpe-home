@@ -26,7 +26,7 @@ const Home = () => (
     <main className='w-full'>
       {/* Above the fold */}
       <Hero /> 
-   
+      <Slider />
       <TrustBadges />
       <Services />
        <Suspense fallback={<div>Loading regulatory info...</div>}>

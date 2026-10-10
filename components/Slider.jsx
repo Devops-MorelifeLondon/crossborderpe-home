@@ -3,43 +3,35 @@
 import Image from "next/image";
 import React from "react";
 
-const logos = [
-  { src: "/company/Aadhaar_Preview.png", alt: "Aadhaar" },
-  { src: "/company/BHIM_Preview.png", alt: "BHIM" },
-  { src: "/company/Digital-india-black.jpg", alt: "Digital India" },
-  { src: "/company/Make_In_India.png", alt: "Make In India" },
-  { src: "/company/My-Gov.png", alt: "My Gov" },
-  { src: "/company/national-emblem-front.png", alt: "National Emblem" },
-  { src: "/company/rbi.png", alt: "RBI" },
-  { src: "/company/Startup-India_Preview.png", alt: "Startup India" },
-  { src: "/company/UPI.png", alt: "UPI" },
+const paymentRails = [
+  { name: "US ACH Clearing", code: "ACH" },
+  { name: "Fedwire Rails", code: "FEDWIRE" },
+  { name: "SEPA Instant", code: "SEPA" },
+  { name: "UK Faster Payments", code: "FASTER PAY" },
+  { name: "SWIFT Network", code: "SWIFT" },
+  { name: "BACS Clearing", code: "BACS" },
+  { name: "Canada EFT", code: "EFT" },
+  { name: "Australia BECS", code: "BECS" },
+  { name: "India NEFT / RTGS", code: "NEFT/RTGS" },
+  { name: "Automated e-FIRA", code: "e-FIRA" },
 ];
 
-// Duplicate for seamless looping
-const extendedLogos = Array(6).fill(logos).flat();
+const extendedRails = Array(4).fill(paymentRails).flat();
 
 const Slider = React.memo(() => {
   return (
     <section
-      className="relative w-full overflow-hidden bg-white py-6"
-      aria-label="Trusted by leading Indian institutions"
+      className="relative w-full overflow-hidden bg-slate-50 py-4 border-y border-slate-200/60"
+      aria-label="Supported global clearing rails"
     >
-      <div className="flex animate-scroll min-w-max">
-        {extendedLogos.map((logo, index) => (
+      <div className="flex animate-scroll min-w-max gap-8 items-center">
+        {extendedRails.map((rail, index) => (
           <div
             key={index}
-            className="flex h-12 min-w-[150px] sm:min-w-[200px] items-center justify-center px-4"
+            className="flex items-center space-x-2 px-4 py-2 bg-white rounded-lg border border-slate-200 shadow-2xs"
           >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              loading="lazy"
-              width={160}
-              height={60}
-              
-              draggable={false}
-              className="h-full w-auto object-contain select-none"
-            />
+            <span className="h-2 w-2 rounded-full bg-blue-600"></span>
+            <span className="text-xs font-bold text-slate-800 tracking-wide">{rail.name}</span>
           </div>
         ))}
       </div>
