@@ -42,28 +42,31 @@ const Contact = () => {
 
   const contactMethods = [
     {
-      icon: Headphones,
-      title: "Live Chat Support",
-      description: "Get instant help with your cross-border payments",
-      contact: "Available 24/7",
-      availability: "Average response: 30 seconds",
-      action: "Start Chat"
+      icon: MessageSquare,
+      title: "WhatsApp Support",
+      description: "Chat directly with our global payment specialists",
+      contact: "+44 7481 354231",
+      availability: "Fast response via WhatsApp",
+      action: "Chat on WhatsApp",
+      href: "https://wa.me/447481354231?text=Hello%20CrossborderPe%20team%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
     },
     {
       icon: Phone,
       title: "Phone Support",
       description: "Speak directly with our payment specialists",
-      contact: "+1 (800) 123-4567",
+      contact: "+44 7481 354231",
       availability: "24/7 Multi-language support",
-      action: "Call Now"
+      action: "Call Now",
+      href: "tel:+447481354231"
     },
     {
       icon: Mail,
       title: "Email Support",
       description: "Send us your detailed inquiries",
-      contact: "support@crossborderpe.com",
+      contact: "info@crossborderpe.com",
       availability: "Response within 2 hours",
-      action: "Send Email"
+      action: "Send Email",
+      href: "mailto:info@crossborderpe.com"
     }
   ];
 
@@ -161,9 +164,20 @@ const Contact = () => {
                 <div className="font-semibold text-slate-900">{method.contact}</div>
                 <div className="text-sm text-slate-500">{method.availability}</div>
               </div>
-              <button className="w-full bg-slate-100 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-200 transition-all">
-                {method.action}
-              </button>
+              {method.href ? (
+                <a
+                  href={method.href}
+                  target={method.href.startsWith("http") ? "_blank" : undefined}
+                  rel={method.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="block w-full bg-slate-100 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-emerald-50 hover:text-emerald-700 transition-all text-center"
+                >
+                  {method.action}
+                </a>
+              ) : (
+                <button className="w-full bg-slate-100 text-slate-700 px-6 py-3 rounded-lg font-medium hover:bg-slate-200 transition-all">
+                  {method.action}
+                </button>
+              )}
             </div>
           ))}
         </div>

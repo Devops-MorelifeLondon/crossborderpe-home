@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import NextTopLoader from "nextjs-toploader";
 import ReCaptchaProviderWrapper from "@/components/ReCaptchaProviderWrapper";
 import Script from "next/script";
@@ -91,6 +92,7 @@ export default function RootLayout({ children }) {
           <NavBar />
           {children}
           <Footer />
+          <WhatsAppButton />
         </ReCaptchaProviderWrapper>
       </body>
     </html>
