@@ -259,12 +259,10 @@ export default function NavBar() {
                 Sign In
               </Link>
               <Link
-                href="https://app.crossborderpe.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-sm hover:shadow-md transition-all flex items-center gap-1.5"
+                href="/contact"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-xs hover:shadow-sm transition-all flex items-center gap-1.5"
               >
-                <span>Open Account</span>
+                <span>Contact Now</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -586,18 +584,17 @@ export default function NavBar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full py-2.5 text-center text-sm font-semibold text-slate-700 border border-slate-300 rounded-lg"
+                className="block w-full py-2.5 text-center text-sm font-semibold text-slate-700 border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors"
               >
                 Sign In
               </Link>
               <Link
-                href="https://app.crossborderpe.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full py-2.5 text-center text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-sm"
+                className="flex items-center justify-center gap-2 w-full py-2.5 text-center text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-xs transition-all"
               >
-                Open Account
+                <span>Contact Now</span>
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
